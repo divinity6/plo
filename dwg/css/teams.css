@@ -1,0 +1,49 @@
+ /*---------------------------*/ 
+ #teams_wrap {width:100%; background:#0B0E16;}
+ #teams { width:90%; margin:auto; background:#151C2D; border-radius: 50px; box-shadow: 10px 10px 5px #070a0f; }
+ #teams_top { display:flex; justify-content: flex-end; align-items: center; padding: 50px 0; margin-right: 100px;}
+ #teams_goBox { display:flex; justify-content: flex-end; align-items:center; margin-right:15px;}
+ .teams_topic {background:#0B0E16; box-shadow: 10px 10px 5px #0C1019;}
+ .teams_crl { width:15px; height:15px; border-radius:10px; background:#0B0E16;
+margin-right:15px; box-shadow: 5px 5px 5px #0C1019;}
+.teams_go {display: flex; justify-content: center; align-items: center; box-shadow: 5px 5px 5px #0C1019;
+    width:43px;height:43px; border-radius:25px; background:#0B0E16; cursor:pointer; }
+.teams_left { font-size: 25px; color:#D1D1D1;}
+.teams_go>div { width: 6px; height:6px; border-radius:5px; background:#D1D1D1; }
+
+#teams_main { width:90%; margin: 60px auto 0; padding-bottom : 40px;}
+#teams_player { width:100%; margin-bottom:30px;}
+.playerList { width: 32%; height: 400px; cursor:pointer; opacity:.6; transition:.3s;}
+.playerList:hover { opacity:1;}
+.playerImg { margin:auto; border-radius: 20px;}
+.playerCtn { width:50%; margin :15px auto; text-align: center }
+.teams_name { font-size: 24px; color:#fff;}
+.teams_pos,.teams_author { width:70%; margin:10px auto 0; display:flex; justify-content: space-between; align-items: center;}
+.teams_pos>p,.teams_author>p {font-size: 18px; color:#AAAAAA;}
+.teams_line { margin: 15px auto 0; width: 120px; height:13px; transition:.3s;
+    background:#2D4051; border-radius: 5px;}
+.playerList:hover>.playerCtn>.teams_line { background :#00AFA6;}
+
+#teams_btn { margin:auto; text-align: center; color:#fff; box-shadow: 3px 3px 5px #0C1019; transition:.3s;
+    font-size:35px; background:#00AFA6; width: 280px; padding: 10px 0; border-radius:15px; cursor:pointer;}
+#teams_btn:hover {background:#003972;}
+
+
+
+/*미디어쿼리*/
+@media screen and (max-width : 1025px) { 
+    #teams_main {margin: 30px auto 0;}
+    
+    .playerList {opacity:1;}
+    .teams_line {background :#00AFA6;}
+    #teams_goBox {display:none;}
+    #teams_top {margin:auto;}
+    .teams_topic {margin:auto; width:80%;}
+
+}/*end @media screen and (max-width : 1025px)*/
+
+
+@media screen and (max-width : 650px) { 
+    #teams_main {margin: 0 auto;}
+    #teams_btn {font-size:20px;}
+} /*end @media screen and (max-width : 650px)*/

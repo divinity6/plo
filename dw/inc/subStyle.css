@@ -1,0 +1,108 @@
+@charset "urf-8";
+
+
+/*nav*/
+#container {overflow:hidden;}
+.main_list:nth-child(2) { color : #4A80CE;}
+.main_list:nth-child(2):hover {  color : white; }
+
+#top_ctn { height : 100px; margin-top : 60px;
+	width : 100%; max-width: 1920px; background :#4A80CE;  }
+.sub_h4_1  { margin : 0; line-height: 100px; 
+	width : 1200px; color : white;
+	margin : auto;}
+
+#secA { width : 100%; margin : 50px auto; }
+#secA_outBox { display : flex; align-items: center; justify-content: space-between;}
+.secA_inBox1 { width : 33%; }
+#sub_img { width : 100%; display: block;}
+.secA_inBox2 { width : calc(66% - 10px); margin-left : 10px; }
+.secA_sub_h4_1 { margin : 0; color : #112746; }
+.secA_sub_p_1 { margin : 0; color : rgb(119, 119, 119); margin-bottom: 10px; }
+.secA_sub_p_2 { margin : 0; color : rgb(196, 196, 196); margin-bottom: 20px; }
+.secA_bot { width : 100%; max-width : 1200px;
+	margin : 60px auto;
+	border-bottom : 1px solid #ccc; }
+
+/*secB*/
+#secB { width : 100%; margin : 50px auto;  }
+#secB_menu { display : flex; align-items: center; justify-content: space-between;
+	flex-wrap: wrap; }
+.secB_list { width : calc(33% - 20px); cursor:pointer;
+	box-shadow: 10px 10px 20px rgba(0,0,0,.2); }
+.secB_imgBox { width : 95%; margin: 10px auto; overflow:hidden; }
+.secB_img { width : 100%; display: block; transition:.3s;}
+.secB_list:hover>.secB_imgBox>.secB_img {transform:scale(1.2);}
+.secB_ctnBox { margin-left : 10px; display : flex; align-items: center; justify-content: space-between; }
+.secB_left_ctn { padding : 10px 0 40px; }
+.secB_h4 { margin : 0; color : #112746; }
+.secB_p { margin : 0; color : rgb(168, 168, 168); }
+.secB_right_ctn { margin-right : 10px; padding : 10px 0 40px;}
+.secB_con { font-size : 2.5rem; color :#4A80CE; }
+
+
+
+
+#secC { width:100%; display:flex; justify-content: space-between; }
+.secC_index { width:40%; }
+.blog_title, .news_title { font-size:1.5rem; color:#112746; margin-bottom:15px;}
+.secC_post { display: flex; margin-bottom:20px;}
+.img{ display: block; width: 160px; border-radius:10px; box-shadow:3px 3px 5px rgba(0,0,0,.3);}
+.secC_post>div { margin-left:10px;}
+.secC_inTopic {color: #456da5;}
+.secC_date {font-size:.7rem; margin: 2px 0; color:rgb(148, 148, 148);}
+.secC_inText {font-size:.9rem; color:rgb(146, 146, 146);}
+.secC_inText>a {font-size:.9rem; color:#456da5;}
+.secC_news {margin-bottom: 40px;}
+
+
+/*미디어 쿼리*/
+@media screen and (max-width : 1200px){ 
+	#top_ctn {padding-left:40px;}
+	#secA_outBox { width:95%;margin:auto;}
+	.secA_inBox1 {width:40%; margin:auto;}
+	.rwd_hidden {display:none;}
+	.secA_sub_h4_1 {font-size:1.5rem;}
+	.secA_sub_p_1 {font-size:1.3rem;}
+
+	.secA_bot { margin:40px auto;}
+	#secB_menu {justify-content:center;}
+	.secB_list {width : 45%; margin-bottom: 20px;}
+	.secB_list:first-child { margin-right:20px;}
+	.secB_list:last-child { width:60%; margin-bottom: 0px;}
+
+	#secC {display: block;}
+	.secC_index {width:95%; margin: 0 auto 50px;}
+	.secC_post {align-items: center;}
+	.img {width: 220px;}
+	.secC_news { margin-bottom:25px; padding-bottom:8px;
+		 border-bottom: 1px dotted rgb(148, 148, 148);}
+}/*end @media screen and (max-width : 1200px)*/
+
+/*미디어 쿼리*/
+@media screen and (max-width : 650px){ 
+	section {margin-top:50px;}
+	#top_ctn {height: 70px;}
+	#secA {margin: 35px auto;}
+	.sub_h4_1 {font-size:1.3rem; line-height: 70px;}
+	#secA_outBox {display: block;}
+	.secA_inBox1 {width:95%;}
+	.secA_inBox2 {width: 95%; margin-top:15px;}
+	.secA_sub_h4_1 {font-size:1.2rem;}
+	.secA_sub_p_1 {font-size:1.1rem;}
+
+	.secA_bot {margin:30px auto;}
+
+	.secB_list {width:95%; margin: 0 auto 20px;}
+	.secB_list:first-child { margin: 0 auto 20px; }
+	.secB_list:last-child { width:95%; margin: 0 auto 20px; }
+
+	.blog_title, .news_title {text-align: center;}
+	.secC_post {display: block;}
+	.img {width:80%; margin: auto;}
+	.secC_post>div {width:80%;margin: 13px auto 0;}
+	.secC_inTopic {text-align: center; text-overflow: ellipsis;
+		white-space: nowrap; overflow: hidden;}
+	.secC_date {text-align: center;}
+	.secC_inText {text-align: center;}
+} /*end @media screen and (max-width : 650px)*/

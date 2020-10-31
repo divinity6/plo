@@ -1,0 +1,385 @@
+@charset "urf-8";
+
+/* Animate 애니메이션*/
+@import url(animate.css);
+
+/* Awesome Font*/
+@import url('fontawesome/css/all.css');
+
+/* 구글 노토산스 폰트 임포트*/
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+
+* {box-sizing : border-box;}
+
+/*바디 노토산스 폰트*/
+body { margin : 0; font-family: 'Noto Sans KR', sans-serif; }
+
+ul { list-style : none; padding : 0; margin : 0; }
+
+
+/*전체를 감싸는 커다란박스 container*/
+#container { max-width:1930px; width:100%; margin : auto;}
+
+
+/*전체적인 메인 폰트사이즈*/
+.ctn_h3 { margin : 0; font-size : 1.3rem; letter-spacing: -0.5px;
+font-weight : 700;}
+.ctn_h4 { font-size : 1.1rem;
+	margin : 0;  letter-spacing: -0.5px; font-weight : 500;}
+.ctn_p { font-size : .9rem;
+	margin : 0;  letter-spacing: -0.5px; font-weight : 300; }
+.link_page { font-size : 1.1rem; color : #2A9CE8; font-weight: 500;
+letter-spacing: -0.5px; cursor : pointer; }
+.link_page:hover { text-decoration: underline; }
+
+/*----------------------------네비게이션------------------------------*/
+
+/*비활성화된 링크*/
+.navLink { opacity : .5; cursor : default; transition :.3s; }
+
+
+#naviBox_1 { width:100%; height:50px; position :fixed; 
+    top :0;left : 0;
+	z-index: 92;
+    
+    background-color : #111111;}
+
+#navi_1 {
+    z-index: 95;
+    
+    
+    width : 100%; max-width :1325px; margin:auto;
+    
+    display : flex; justify-content: space-between;
+    align-items : center; flex-wrap : wrap; }
+
+/*RWD View*/
+#view_nav1 { display: none; cursor : pointer; }
+.view_nav_icon { line-height: 50px; transition : .3s;
+    font-size : 1.5rem; color : white; margin-left : 20px;}
+
+/*로고 박스들*/
+#logo_OutBox {margin-left : 50px; line-height: 48px; margin-top : 5px;
+    display : flex; align-items : center; width : 10%;}
+#logoBoxNav { width : 20px; cursor : pointer;  }
+#logo_Mnav { width : 100%; }
+
+
+
+/*메인메뉴들*/
+#mainMenu_1 { 
+    width : 55%;
+    
+    display : flex; justify-content: space-between;
+    align-items : center; flex-wrap : wrap;}
+
+.mainList_1 { position : relative; width : 15%;}
+
+.mainListFont { text-align: center; cursor : pointer;
+    letter-spacing : -.1px;
+    font-weight: 300; font-size : .9rem; transition : .3s;
+    margin : 0; color : rgba(255,255,255,.9); line-height: 50px;}
+
+.mainListFont:hover { color : rgba(255,255,255,1); }
+.subMenu_1{
+    display: none;
+    
+    width : 100%;
+    padding-top : 40px;
+    position :absolute; top :100%; left :0; }
+
+.subMenu_Line { padding-top : 65px;
+    width : 2px; left : 50%; transform:translateX(-50%);}
+
+
+
+
+/*라인*/
+#sub_NavLine { width : 100%; }
+
+.subList_1 { text-align: center; font-size :.8rem; letter-spacing : -.1px;
+    line-height: 30px; color :#E5E5E5; cursor : pointer; font-weight : 200;
+    }
+.subList_1:hover { text-decoration: underline;}
+
+
+
+
+
+/*폼 전체 버튼*/
+#form_outBox {
+	position : fixed; top : 0;right : 30%;
+	width : 50%; display : flex;justify-content: flex-end;
+	align-items: center; }
+
+
+/*폼 닫기 버튼*/
+#navi_closeBox { cursor : pointer; display : none; width : 4%; }
+.navi_close { color : #E5E5E5; line-height: 50px;}
+
+
+/*폼버튼*/
+#form_navi1Box { width : 95%; display : none; }
+#form_navi1 { width : 100%; border : none; background-color:#E5E5E5; outline : none;
+    padding : 5px 0;}
+
+/*돋보기아이콘*/
+#search_naviBox { margin-left : 15px; margin-right : 10px;cursor : pointer;}
+#search_navi { width : 18px; }
+
+#search_nav1 { width : 100%; }
+
+/*모달창열기--v--아이콘*/
+#modal_open_navBox { 
+    margin-right : 120px; cursor : pointer; }
+#modal_open_nav { 
+	color : white; margin-right : 50px; font-size : 1.2rem; }
+
+.modal_OpenLine_nav { width : 100%; display: block; transition : .5s; }
+.modal_OpenLine_nav1 { }
+.modal_OpenLine_nav2 { }
+
+
+/*<!--네비아래에 깔배경 sub_back-->*/
+#sub_back {  
+    display: none;
+    position: fixed; top : 0;left :0;
+    
+    z-index: 90;
+    width: 100%; height: 340px; background: #161616;
+    
+}
+#sub_iconAlign { width : 21%;
+    
+    display : flex; justify-content: space-between; }
+
+#sub_navBackIcon { padding-top :135px;
+    width : 107px;}
+#sub_NavLogo { width : 100%;}
+
+
+/*----------------------------- 모달 창---------------------------------------*/
+#modal_nav { 
+	z-index : 80; display : none;
+	
+	position : fixed; top : 50px;right : 0; background : white;
+	width : 600px; height : 100vh; }
+
+#modal_back { height : 150px; background : #161616;}
+#modal_nav_Logo { width : 120px; 
+margin : auto; padding-top : 40px; }
+
+#modal_logo { width 100%;}
+
+#modal_ctnBox { margin : 30px auto 0; width : 60%; text-align: center;
+	display : flex; justify-content :flex-start; align-items: center; }
+
+#modal_ctn { font-size : 2rem; font-weight: 600; color : #161616; }
+#modal_topLine { border-bottom : 3px solid #161616;
+	width : 55%; margin-left : 20px;}
+
+/*폼 윗부분*/
+
+#modal_formMenu { 
+	margin: 5px auto 10px; display : flex; justify-content: space-between; align-items: center; width : 70%;  }
+
+/*클릭하면생성*/
+.modal_check { cursor : pointer; 
+	display : flex; justify-content: space-between; align-items: center; }
+
+
+.checkBox_modal { width : 15px; height: 15px; background: #ECECEC; margin-right : 10px; }
+
+.inCheckBox_modal { display : none;
+	width : 60%; height : 60%; background : #727272; 
+	margin : 20% auto;  }
+
+.checkMenu_modal { font-size : .8rem; color : #727272; }
+
+
+
+/*폼메인*/
+#modal_formLine { margin: auto; width : 70%;  }
+.modal_inputBox { margin-bottom : 20px; }
+
+.modal_formText {  border : none; padding : 15px 30px;
+	outline : none; color : #727272; font-weight: 400;
+	width : 100%; font-size : 1.1rem; background : #ECECEC;}
+.modal_text { margin : 0; text-align: right; font-size : .8rem; color : #5B5B5B;}
+
+
+
+
+/*연락처*/
+#modal_phoneBox { margin : auto; width : 70%; display : flex; justify-content:space-between; align-items : center; margin-bottom : 25px; }
+.modal_phone { border : none; padding : 15px 30px;
+	width : calc(33% - 20px);
+	outline : none; color : #727272; font-weight: 400; font-size : 1.1rem; background : #ECECEC; }
+
+
+/*폼하단*/
+#modal_otherBox { width : 70%; margin : 0 auto 20px; }
+.modal_formTextBig { border : none; padding : 15px 30px 60px;
+	outline : none; color : #727272; font-weight: 400;
+	width : 100%; font-size : 1.1rem; background : #ECECEC; }
+
+
+#modal_checkBot { display : flex; justify-content: flex-start; align-items: center; }
+.checkMenu_text2 { margin-right : 20px;}
+
+
+
+/*모달 보내기버튼*/
+#modal_submitBox {  width : 70%; margin : auto; text-align: center;}
+.modal_submit { 
+	cursor : pointer;  margin: auto; color : #999; transition : .3s;
+	padding : 10px 40%; border : 4px solid #999;
+	font-size : 2rem; }
+.modal_submit:hover { background : #999; color : white;}
+
+
+/*반응형 고려 모달빈창*/
+.RWD_blank_modal { display : none; }
+
+
+
+
+
+
+
+/*-------------------------------blank_Box-------------------------------------*/
+#blank_Box { position : fixed; top : 0; left : 0; width : 100%; height : 100%;
+	background-color : rgba(0,0,0,.8);
+	z-index: 75; display : none; cursor : pointer;
+}
+
+#closebox_blank { cursor : pointer; display : none; }
+.blank_close { color : white; position : fixed; top : 15px; left : 50%;
+font-size : 1.5rem; transform : translateX(-50%); }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*--------------------------미디어 쿼리 1600px-------------------------*/
+@media screen and (max-width : 1600px) {
+	/*폼박스 크기조정*/
+	#form_outBox { width : 60%;}
+}
+
+
+
+/*--------------------------미디어 쿼리 1500px-------------------------*/
+@media screen and (max-width : 1500px) {
+    #sub_iconAlign { width : 15%;}
+    #sub_closed { left : 50px;}
+}
+
+
+
+
+/*--------------------------미디어 쿼리 1020px-------------------------*/
+@media screen and (max-width : 1020px) {
+	/*---------------*---------------네비1---------------------*/
+    /*뷰메뉴 보임*/
+    #view_nav1 { display: block; position : fixed; ; left : 0;}
+    
+    #logo_OutBox { margin:5px auto 0;}
+	#logoBoxNav {margin : auto;}
+    
+    /*메인메뉴 크기 100%*/
+    #mainMenu_1 { width : 100%; display : none;
+        position : fixed; top : 50px; left : 0;
+		overflow: scroll; height: calc(100vh - 52px); 
+    }
+	
+    .mainList_1 { 	margin : 0px 10%; width : 80%; }
+    .mainListFont {text-align: left; border-bottom : 2px solid white; color : rgba(255,255,255,1); font-weight: 400;}
+    
+    /*서브메뉴*/
+    .subMenu_1 { position : static; padding-top : 10px;}
+    .subMenu_Line { padding-top : 65px; }
+    .subList_1  {text-align: left; border-bottom : 1px solid #E5E5E5;
+        line-height: 40px; width : 100%;}
+    /*돋보기 아이콘 숨김*/
+    #search_naviBox { display: none;}
+    
+ 
+	#modal_open_navBox { position : fixed; right : 0px; margin-right : 0;}
+	.modal_OpenLine_nav { font-size : 1.4rem;}
+    
+    
+    
+    /*네비아래에 깔배경*/
+    #sub_back { width : 100%; height : 100vh;}
+    #sub_iconAlign { display : block;}
+    #sub_navBackIcon { position : fixed; 
+        bottom : 50px; left : 50%; transform:translateX(-50%)}
+    
+
+}
+
+
+
+
+/*--------------------------미디어 쿼리 740px-------------------------*/
+@media screen and (max-width : 740px) {
+	
+	
+	
+	/*네비게이션 배경 아이콘*/
+	#sub_navBackIcon { display: none;}
+	
+	
+	
+	/*모달 창*/
+	#modal_nav { width : 100%; overflow : scroll;}
+	#modal_ctn { font-size : 1.7rem; }
+	#closebox_blank { display : block;}
+	
+}
+
+
+
+/*--------------------------미디어 쿼리 480px-------------------------*/
+@media screen and (max-width : 480px) {
+    /*네비게이션*/
+	#navi_1 { justify-content: space-between; }
+	#logo_OutBox { margin:5px auto 0 auto;}
+	#logoBoxNav {margin : auto;}
+	#modal_open_navBox {margin-right : 0;}
+	#modal_open_nav { margin-right : 8px;}
+}
+
+
+
+/*--------------------------미디어 쿼리 400px-------------------------*/
+@media screen and (max-width : 400px) {
+	#modal_formMenu { flex-wrap: wrap; }
+	.modal_check { width : 49%; justify-content: flex-start; }
+	
+}
+
+
+/*--------------------------미디어 쿼리 385px-------------------------*/
+@media screen and (max-width : 385px) { 
+	/*모달 창*/
+	.modal_text { font-size : .7rem; }
+	.modal_formTextBig { padding : 10px 30px 30px;}
+}
+
+
+
+
+
+
+

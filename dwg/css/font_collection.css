@@ -1,0 +1,113 @@
+@charset "urf-8";
+
+/*----------------------metropolice--------------------------*/
+/*Black*/
+@font-face {
+    font-family : MetropolisWeb-black;
+    src : url('../font/metropolice_font/metropolice_eot/Metropolis-Black.eot') format('embedded-opentype'),
+    /*url('../font/metropolice_font/metropolice_woff2/Metropolis-Black.woff2') format('woff2'),*/
+    url('../font/metropolice_font/metropolice_woff/Metropolis-Black.woff') format('woff'),
+    url('../font/metropolice_font/metropolice_ttf/Metropolis-Black.ttf') format('truetype');
+    
+    font-weight: normal; font-style: normal;
+}
+
+/*Bold*/
+@font-face {
+    font-family : MetropolisWeb-Bold;
+    src : url('../font/metropolice_font/metropolice_eot/Metropolis-Bold.eot') format('embedded-opentype'),
+/*    url('../font/metropolice_font/metropolice_woff2/Metropolis-Bold.woff2') format('woff2'),*/
+    url('../font/metropolice_font/metropolice_woff/Metropolis-Bold.woff') format('woff'),
+    url('../font/metropolice_font/metropolice_ttf/Metropolis-Bold.ttf') format('truetype');
+    
+} 
+
+/*ExtraBold*/
+@font-face {
+    font-family : MetropolisWeb-ExtraBold;
+    src : url('../font/metropolice_font/metropolice_eot/Metropolis-ExtraBold.eot') format('embedded-opentype'),
+/*    url('../font/metropolice_font/metropolice_woff2/Metropolis-ExtraBold.woff2') format('woff2'),*/
+    url('../font/metropolice_font/metropolice_woff/Metropolis-ExtraBold.woff') format('woff'),
+    url('../font/metropolice_font/metropolice_ttf/Metropolis-ExtraBold.ttf') format('truetype');
+    
+} 
+
+
+/*ExtraLight*/
+@font-face {
+    font-family : MetropolisWeb-ExtraLight;
+    src : url('../font/metropolice_font/metropolice_eot/Metropolis-ExtraLight.eot') format('embedded-opentype'),
+/*    url('../font/metropolice_font/metropolice_woff2/Metropolis-ExtraLight.woff2') format('woff2'),*/
+    url('../font/metropolice_font/metropolice_woff/Metropolis-ExtraLight.woff') format('woff'),
+    url('../font/metropolice_font/metropolice_ttf/Metropolis-ExtraLight.ttf') format('truetype');
+    
+}
+
+/*Light*/
+@font-face {
+    font-family : MetropolisWeb-Light;
+    src : url(../font/metropolice_font/metropolice_eot/Metropolis-Light.eot) format('embedded-opentype'),
+/*    url(../font/metropolice_font/metropolice_woff2/Metropolis-Light.woff2) format('woff2'),*/
+    url(../font/metropolice_font/metropolice_woff/Metropolis-Light.woff) format('woff'),
+    url(../font/metropolice_font/metropolice_ttf/Metropolis-Light.ttf) format('truetype');
+    
+}
+
+/*Medium*/
+@font-face {
+    font-family : MetropolisWeb-Medium;
+    src : url(../font/metropolice_font/metropolice_eot/Metropolis-Medium.eot) format('embedded-opentype'),
+/*    url(../font/metropolice_font/metropolice_woff2/Metropolis-Medium.woff2) format('woff2'),*/
+    url(../font/metropolice_font/metropolice_woff/Metropolis-Medium.woff) format('woff'),
+    url(../font/metropolice_font/metropolice_ttf/Metropolis-Medium.ttf) format('truetype');
+    
+}
+
+/*Regular*/
+@font-face {
+    font-family : MetropolisWeb-Regular;
+    src : url(../font/metropolice_font/metropolice_eot/Metropolis-Regular.eot) format('embedded-opentype'),
+/*    url(../font/metropolice_font/metropolice_woff2/Metropolis-Regular.woff2) format('woff2'),*/
+    url(../font/metropolice_font/metropolice_woff/Metropolis-Regular.woff) format('woff'),
+    url(../font/metropolice_font/metropolice_ttf/Metropolis-Regular.ttf) format('truetype');
+    
+}
+
+/*SemiBold*/
+@font-face {
+    font-family : MetropolisWeb-SemiBold;
+    src : url(../font/metropolice_font/metropolice_eot/Metropolis-SemiBold.eot) format('embedded-opentype'),
+/*    url(../font/metropolice_font/metropolice_woff2/Metropolis-SemiBold.woff2) format('woff2'),*/
+    url(../font/metropolice_font/metropolice_woff/Metropolis-SemiBold.woff) format('woff'),
+    url(../font/metropolice_font/metropolice_ttf/Metropolis-SemiBold.ttf) format('truetype');
+    
+}
+
+/*Thin*/
+@font-face {
+    font-family : MetropolisWeb-Thin;
+    src : url(../font/metropolice_font/metropolice_eot/Metropolis-Thin.eot) format('embedded-opentype'),
+/*    url(../font/metropolice_font/metropolice_woff2/Metropolis-Thin.woff2) format('woff2'),*/
+    url(../font/metropolice_font/metropolice_woff/Metropolis-Thin.woff) format('woff'),
+    url(../font/metropolice_font/metropolice_ttf/Metropolis-Thin.ttf) format('truetype');
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

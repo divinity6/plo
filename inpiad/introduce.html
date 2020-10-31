@@ -1,0 +1,738 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="format-detection" content="telephone=no" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="author" content="Jeon">
+	<title> inpiad-introduce </title>
+	
+	 <!--페비콘링크-->
+	<link href = "images/favicon.ico" rel = "shortcut icon" />
+	<!--preload 스타일 파일 링크-->
+	<link href = "css/preload.css" rel = "stylesheet" />
+	<!--nav 스타일 파일 링크-->
+	<link href = "css/nav.css" rel="stylesheet" />
+	<!--footer 스타일 파일 링크 -->
+	<link href = "css/foot2.css" rel = "stylesheet" />
+	<!--introduce 스타일 파일 링크 -->
+	<link href = "css/introduceStyle.css" rel = "stylesheet" />
+	
+	
+	
+	 <!--JQuery 라이브러리 준비-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!--preload 스크립트 파일 준비-->
+	<script src = "js/preload.js"></script>
+    <!--nav 스크립트 파일 준비-->
+    <script src = "js/nav.js"></script>
+    <!--foot 스크립트 파일 준비-->
+    <script src = "js/foot.js"></script>
+    <!--introduce 스크립트 파일 준비-->
+    <script src = "js/introduceScript.js"></script>
+</head>
+
+	<body>
+	
+	<!--전체를 감싸는 큰박스 container-->
+    <div id = "container">
+       
+       <!--페이지가 뜨기전 프리로딩박스!-->
+       <div id ="preload">
+       		<div class="spinner">
+			  <div class="cube1"></div>
+			  <div class="cube2"></div>
+			</div>
+       </div>
+       
+        <!--naviBox_1 백그라운드를 깔기위함-->
+        <div id = "naviBox_1" class = "naviBox">
+            <!--nav실제 내용컨텐츠-->
+            <nav id = "navi_1" class = "navi">
+                <!--반응형 view 네비-->
+                <div id = "view_nav1"><i class="fas fa-minus view_nav_icon"></i></div>
+                
+                <div id = "logo_OutBox">
+                    <div id = "logoBoxNav">
+                        <img src = "images/Navi/MainLogo_Navi.svg" alt = "MainLogo" id = "logo_Mnav" />
+                    </div>
+
+                </div>
+                
+                <ul id = "mainMenu_1">
+                    
+                    
+                    <li class = "mainList_1">
+                        <h4 class = "mainListFont">포트폴리오</h4>
+                        
+                        <div class = "subMenu_1 subMenu_Line">
+                            <img src = "images/Navi/SubLine_Navi.svg" alt = "subNavLine" id = "sub_NavLine" />
+                        </div>
+                        
+                    </li>
+                    
+                    
+                    <li class = "mainList_1">
+                        <h4 class = "mainListFont">패키지 상품</h4>
+                        <ul class = "subMenu_1">
+                            <li class = "subList_1 pakages_a">프리미엄 팩</li>
+                            <li class = "subList_1 pakages_a">스탠다드 팩</li>
+                            <li class = "subList_1 pakages_a">스페셜 팩</li>
+                            <li class = "subList_1 pakages_a">솔루션 팩</li>
+                            <li class = "subList_1 pakages_a">브랜딩 팩</li>
+                            <li class = "subList_1 pakages_a">키퍼 팩</li>
+                        </ul>
+                        
+                    </li>
+                    
+                    
+                    <li class = "mainList_1">
+                        <h4 class = "mainListFont">디자인 상품</h4>
+                        <ul class = "subMenu_1">
+                            <li class = "subList_1">웹페이지 디자인</li>
+                            <li class = "subList_1">쇼핑몰 디자인</li>
+                            <li class = "subList_1">솔루션</li>
+                            <li class = "subList_1"> 편집 디자인</li>
+                        </ul>
+                    </li>
+                    
+                    
+                    <li class = "mainList_1">
+                        <h4 class = "mainListFont">유지관리 상품</h4>
+                        <ul class = "subMenu_1">
+                            <li class = "subList_1">유지 보수</li>
+                            <li class = "subList_1">도메인 / 호스팅</li>
+                            <li class = "subList_1">웹메일 / 문자서비스</li>
+                            <li class = "subList_1">보안 서비스</li>
+                            <li class = "subList_1">전자 결제</li>
+                        </ul>
+                        
+                    </li>
+                    
+                    
+                    <li class = "mainList_1">
+                        <h4 class = "mainListFont">브랜드 설계</h4>
+                        <ul class = "subMenu_1">
+                            <li class = "subList_1">키워드 광고</li>
+                            <li class = "subList_1">배너 광고</li>
+                            <li class = "subList_1">네트워크 광고</li>
+                            <li class = "subList_1">바이럴 광고</li>
+                            <li class = "subList_1">언론홍보 광고</li>
+                            <li class = "subList_1">콘텐츠 광고</li>
+                            <li class = "subList_1">이슈 메이킹</li>
+                        </ul>
+                    </li>
+                    
+                    
+                    <li class = "mainList_1">
+                        <h4 class = "mainListFont">고객 지원</h4>
+                        <ul class = "subMenu_1">
+                            <li class = "subList_1">마케팅</li>
+                            <li class = "subList_1">수상 내역</li>
+                            <li class = "subList_1">자주하는 질문</li>
+                            <li class = "subList_1">계약 현황</li>
+                            <li class = "subList_1">회사 소개</li>
+                            <li class = "subList_1">채용 정보</li>
+                        </ul>
+                        
+                    </li>
+                    
+                    
+                </ul>
+                
+                <!--폼 전체박스-->
+                <div id = "form_outBox">
+					<!--폼 닫기 버튼-->
+					<div id = "navi_closeBox"><i class="fas fa-times navi_close"></i>
+					</div>
+
+					<!--돋보기아이콘 클릭시 나타나는 폼-->
+					<div id = "form_navi1Box">
+						<input type = "text" id = "form_navi1" required>
+					</div> 
+                </div>
+                
+                
+                <!--돋보기아이콘 search-->
+                <div id = "search_naviBox">
+                    <div id = "search_navi">
+                        <img src = "images/Navi/Magnifier_Navi.svg" alt = "magnifier" id = "search_nav1" />    
+                    </div>
+                </div>
+
+
+                <!--v 아이콘-->
+                <div id = "modal_open_navBox">
+                   
+                    <div id = "modal_open_nav">
+                      <i class="fas fa-edit modal_OpenLine_nav"></i>
+                    </div>
+                </div>
+                
+                
+            </nav>
+
+        </div><!--navi1Box-->
+        
+        <!--네비아래에 깔배경 sub_back-->
+        <div id = "sub_back">
+            
+            <div id = "sub_iconAlign">
+                
+                <div id = "jokeBox_navi"></div>
+                <div id = "sub_navBackIcon">
+                    <img src = "images/Navi/SubLogo_Navi.svg" alt = "subLogo" id = "sub_NavLogo" />
+                </div>
+            </div>
+        </div><!--sub_back-->
+    
+    
+    
+		<!--네비 모달-->
+		<div id = "modal_nav">
+			<!--모달 로고-->
+			<div id = "modal_back">
+				<div id = "modal_nav_Logo">
+					<img src = "images/modal/LogoType_Modal.svg" alt = "modalLogo" id = "modal_logo" />
+				</div>
+			</div>
+			
+			<!--모달 윗캡션-->
+			<div id = "modal_ctnBox">
+				<div id = "modal_ctn">견적 문의</div>
+				<div id = "modal_topLine"></div>
+			</div>
+			
+			<!--폼윗부분-->
+			<div id = "modal_formMenu"> 
+			
+				<div class = "modal_check">
+					<div class = "checkBox_modal">
+						<div class = "inCheckBox_modal"></div>
+					</div>
+            		
+             		<p class = "checkMenu_modal">웹페이지</p>
+              </div>
+              
+              <div class = "modal_check">
+					<div class = "checkBox_modal">
+						<div class = "inCheckBox_modal"></div>
+					</div>
+					
+					<p class = "checkMenu_modal">쇼핑몰</p>
+               </div>
+               
+               
+               <div class = "modal_check">
+					<div class = "checkBox_modal">
+						<div class = "inCheckBox_modal"></div>
+					</div>
+					
+					<p class = "checkMenu_modal">유지관리</p>
+               </div>
+               
+               
+               <div class = "modal_check">
+              	 <div class = "checkBox_modal">
+              	 	<div class = "inCheckBox_modal"></div>
+              	 </div>
+              	 
+              	 <p class = "checkMenu_modal">디자인</p>
+               </div>
+			</div>
+			
+			<!--중요 폼부분-->
+			<ul id = "modal_formLine">
+			
+				<li class = "modal_inputBox">
+					<input type = "text" class = "modal_formText" placeholder = "고객사"
+					required />
+					<p class = "modal_text">귀하의 회사명을 입력해주세요</p>
+				</li>
+				
+				<li class = "modal_inputBox">
+					<input type = "text" class = "modal_formText" placeholder = "담당자"
+					required />
+					<p class = "modal_text">현재 문의를 남겨준 담당자를 입력하세요</p>
+				</li>
+				
+				<li class = "modal_inputBox">
+					<input type = "text" class = "modal_formText" placeholder = "E-MAIL"
+					required />
+					<p class = "modal_text">이메일을 입력해주시면 견적서를 발송해 드립니다</p>
+				</li>
+				
+			</ul>
+			
+			<!--전화번호 부분-->
+			<div id = "modal_phoneBox">
+					<input type = "text" class = "modal_phone" placeholder = "연락처"
+					required />
+					<input type = "text" class = "modal_phone" required />
+					<input type = "text" class = "modal_phone" required />				
+			</div>
+			
+			<!--기타사항 부분-->
+    		<div id = "modal_otherBox">
+    			<input type = "text" class = "modal_formTextBig" placeholder = "기타 문의사항"
+					required />
+					
+				<div id = "modal_checkBot">
+					
+					<div class = "modal_check">
+						<div class = "checkBox_modal">
+							<div class = "inCheckBox_modal"></div>
+						</div>
+
+						<p class = "checkMenu_modal checkMenu_text2">파일 첨부하기</p>
+              		</div>
+              
+              		<div class = "modal_check">
+						<div class = "checkBox_modal">
+							<div class = "inCheckBox_modal"></div>
+						</div>
+
+						<p class = "checkMenu_modal checkMenu_text2">약관 보기</p>
+               		</div>
+					
+				</div>
+				
+					
+    		</div><!--기타사항 부분-->
+    		
+    		<!--보내기 박스-->
+    		<div id = "modal_submitBox">
+    				<i class="fas fa-chevron-down modal_submit"></i>
+    		</div>
+			
+			<div class = "RWD_blank_modal"></div>
+		</div><!--네비 모달-->
+   		
+   		<!--blank_box-->
+   		<div id = "blank_Box">
+   			<div id = "closebox_blank"><i class="fas fa-times blank_close"></i></div>
+   		</div>
+   		
+   		
+   		
+   		<section id = "secA">
+   			<div id = "secA_main_ImgBox1" class= "secA_imgBox">
+   				<img src = "images/sub2/secA1.png" alt = "secA_img" class = "secA_img" />
+   			</div>
+   			
+   			<div id = "secA_main_ImgBox2" class= "secA_imgBox secA_anim1">
+   				<img src = "images/sub2/secA2.png" alt = "secA_img" class = "secA_img" />
+   			</div>
+   			
+   			
+   			
+   		</section>
+   		
+   		<section id = "secB">
+   			<div class = "secB_ctnBox">
+   				<div class = "secB_line_box"></div>
+   				<p class = "secB_main_topic secB_main_topic1">미래를 향한 새로운 도약</p>
+   				<p class = "secB_sub_topic secB_sub_topic1">인피아드는 자기개발역량을 필두로 여러 팀과의 협업에 중점을두고있습니다.<span class="secB_rwd_br"><br/></span> 우리는 항상 도전하며 끊임없이 연구합니다.변해가는 시대를 향해 우리는 멈추지않을겁니다.</p>
+   			</div>
+   			
+   			
+   		</section>
+   		
+   		
+   		
+   		<section id = "secC">
+   			<div id = "secC_container" class = "secC_container1">
+				<div id = "secC_main_imgBox1" class = "secC_imgBox">
+					<img src = "images/sub2/secB_img1.png" alt = "secCimg" class = "secC_img" />
+				</div>
+				<div id = "secC_main_imgBox2" class = "secC_imgBox">
+					<img src = "images/sub2/secB_img2.png" alt = "secCimg" class = "secC_img" />
+				</div>
+				<div id = "secC_main_imgBox3" class = "secC_imgBox">
+					<img src = "images/sub2/secB_img3.png" alt = "secCimg" class = "secC_img" />
+				</div>
+				<div id = "secC_main_imgBox4" class = "secC_imgBox">
+					<img src = "images/sub2/secB_img4.png" alt = "secCimg" class = "secC_img" />
+				</div>
+
+				<div id = "secC_ctnBox">
+					<p class = "secC_sub_topic"><span class = "secC_main1 secC_main1_1">변화.</span><span class = "secC_main2 secC_main2_1">성장.</span><span class = "secC_main3 secC_main3_1">발전.</span>
+					</p>
+					<p class = "secC_main_topic">
+						<span class = "secC_main4 secC_main4_1">그리고 인피아드</span>
+					</p>
+				</div>
+   			</div>
+   		</section>
+   		
+   		<section id = "secD">
+   			<div class = "secD_line_box"></div>
+   			
+   			<div class = "secD_outBox">
+   				<div class = "secD_ctnBox">
+   					<p class = "secD_main_topic">창의,성장을 향한 한걸음</p>
+   					<p class = "secD_sub_topic">우리는 항상 새로운 시도를 멈추지않습니다. 하지만 기본기를 추구합니다.도전이야말로 이시대에 성장하기위한 한걸음이라 생각합니다. 하지만 진정한 프로는 기본이 가장 중요한 법이죠
+   					</p>
+					<p class = "link_page secD_link_page">UX/UI 디자인</p>
+   				</div>
+   				
+   				<div class = "secD_centerLine"></div>
+   				
+   				<div class = "secD_ctnBox">
+   					<p class = "secD_main_topic">혁신, 변화에 대응하는 자세</p>
+   					<p class = "secD_sub_topic">시대는 급속도로 변화하고있습니다. 때문에 변화에 두려워하지않는 기본자세를 갖춰야합니다. 기술은끊임없이 변하기 마련입니다. 때문에 계속해서 자기개발을 쉬지 않아야합니다 
+   					</p>
+					<p class = "link_page secD_link_page">FRONT-END 개발</p>
+   				</div>
+   				
+   			</div> <!--end secD_outBox-->
+   				
+   		</section>
+   		
+   		<!--secE 가짜섹션-->
+   		<section id = "secE"></section>
+   		
+   		<section id = "secF">
+   			
+   			<div class = "secF_ctnBox">
+   				<div class = "secF_mainTopic secF_mainTopic1">웹 개발 구조 |</div>
+   				<div class = "secF_mainTopic secF_mainTopic2">웹 디자인 |</div>
+   				<div class = "secF_mainTopic secF_mainTopic3">프론트엔드 개발 |</div>
+   				<div class = "secF_mainTopic secF_mainTopic4">백 엔드 개발 |</div>
+   				
+   				<div class = "secF_subTopic secF_subTopic1"> <span class = "secF_topic_rwd">&nbsp; </span>저희 인피아드는 모든 단계를 세분화하여 구조적으로 짜임새있게 작성됩니다</div>
+   				<div class = "secF_subTopic secF_subTopic2"><span class = "secF_topic_rwd">&nbsp; </span> 웹디자인 단계에서는 전체적인 틀,및 사용성을위한 UX/UI를 고려해 제작합니다.</div>
+   				<div class = "secF_subTopic secF_subTopic3"><span class = "secF_topic_rwd">&nbsp; </span> 동적 브라우저에 대한 호환성 및 향후 유지관리면에서 부족함이없는 구조에 대한 고려.</div>
+   				<div class = "secF_subTopic secF_subTopic4"><span class = "secF_topic_rwd">&nbsp; </span> 빅데이터 분석 및 새로운 기술과 기존기술과의 조화.</div>
+   			</div>
+   			
+   			
+   			<div class= "secF_contentsBox secF_contentsBox1">
+  				<div class= "secF_skillBox secF_skillBox1">
+   						<div class = "secF_designBox secF_designBox1">
+   							<p class = "secF_mainText secF_mainText1">웹 개발 단계</p>
+   							<p class = "secF_mainText secF_mainText2">웹 디자인</p>
+   							<p class = "secF_mainText secF_mainText3">프론트엔드 개발</p>
+   							<p class = "secF_mainText secF_mainText4 secF_mainText_2">백 엔드 개발</p>
+   						</div>
+   				</div>	
+   			</div>
+
+  		
+   		</section>
+   		
+   		<section id = "secG">
+   			<div class = "secG_ctnBox">
+   				<div id ="secG_boldLine"></div>
+   				<p class = "secG_mainText">대한민국 중소기업 <span class = "secG_br"><br /></span>2,500여 업체가 선정한 기업!</p>
+   				<p class = "secG_subText">중소기업의 중심에 주식회사 인피아드가 <span class = "secG_br"><br /></span>온라인 비즈니스 파트너로써 함께 하고 있습니다.</p>
+   			</div>
+   			
+   			<div class = "secG_contentsBox">
+   			
+   				<div class = "secG_longLine"></div>
+   				
+   				<div class = "secG_topicBox">
+   					<div class = "secG_mainTopicBox secG_mainTopicBox1">
+   						<svg version="1.1" class="secG_mainTopic" x="0px" y="0px" viewBox="0 0 448.667 79.115" enable-background="new 0 0 448.667 79.115" xml:space="preserve">
+<g>
+	<path class = "secG_mainTopic_path" d="M6.878,15.945h25.434c9.005,0,15.26,5.018,15.26,11.892c0,4.605-2.406,8.593-6.53,10.586
+		c5.5,2.338,8.73,6.806,8.73,12.03c0,7.562-6.874,12.717-16.498,12.717H6.878V15.945z M29.081,34.299
+		c2.75,0,4.743-1.513,4.743-3.574c0-2.063-1.994-3.575-4.743-3.575h-8.936v7.149H29.081z M31.075,51.965
+		c2.887,0,4.949-1.581,4.949-3.78c0-2.2-2.062-3.781-4.949-3.781h-10.93v7.562H31.075z"/>
+	<path class = "secG_mainTopic_path" d="M69.087,27.837v5.293h22.479v11.893H69.087v6.255h24.678V63.17H55.752V15.945h38.014v11.892H69.087z"/>
+	<path class = "secG_mainTopic_path" d="M115.622,15.945h14.367l5.774,27.29l9.143-27.29h14.367l9.074,27.29l5.774-27.29h14.367L175.427,63.17
+		h-13.473l-9.83-27.29l-9.898,27.29h-13.474L115.622,15.945z"/>
+	<path class = "secG_mainTopic_path" d="M193.435,15.945h13.336V63.17h-13.336V15.945z"/>
+	<path class = "secG_mainTopic_path" d="M226.637,27.837h-13.955V15.945h41.245v11.892h-13.955V63.17h-13.335V27.837z"/>
+	<path class = "secG_mainTopic_path" d="M303.487,15.945V63.17h-13.335V45.022h-17.254V63.17h-13.335V15.945h13.335V33.13h17.254V15.945H303.487z"
+		/>
+	<path class = "secG_mainTopic_path" d="M330.018,42.204V15.945h13.336v25.571c0,6.049,3.781,10.38,9.143,10.38c5.362,0,9.143-4.331,9.143-10.38
+		V15.945h13.336v26.259c0,12.786-9.279,21.791-22.479,21.791C339.299,63.995,330.018,54.99,330.018,42.204z"/>
+	<path class = "secG_mainTopic_path" d="M379.167,56.021l7.424-8.867c4.813,3.78,10.037,5.774,15.604,5.774c3.644,0,5.567-1.237,5.567-3.3
+		c0-2.269-1.649-2.612-8.18-4.124c-10.242-2.338-18.147-5.019-18.147-14.849c0-9.417,7.424-15.535,18.629-15.535
+		c8.181,0,14.573,2.199,19.798,6.393l-6.668,9.418c-4.4-3.162-9.212-4.743-13.474-4.743c-3.231,0-4.812,1.306-4.812,3.093
+		c0,2.406,1.649,3.162,8.386,4.606c10.999,2.337,17.873,5.293,17.873,14.298c0,9.967-7.63,15.811-19.454,15.811
+		C393.19,63.995,385.147,61.313,379.167,56.021z"/>
+	<path class = "secG_mainTopic_path" d="M425.91,55.884c0-4.125,3.506-7.769,8.111-7.769c4.262,0,7.768,3.644,7.768,7.769
+		c0,4.468-3.506,8.111-7.768,8.111C429.416,63.995,425.91,60.352,425.91,55.884z"/>
+</g>
+</svg>
+   					</div>
+   					
+   					<div class = "secG_mainMent secG_mainMent1 secG_mainMent1_1">우리는 회사의 가치를 제대로 확립하는 것부터 개개인을 브랜드화 <span class = "secG_rwd_ment"><br /></span> 시켜 능력있는 실력자로 양성하는데에 그목적이 있습니다.
+   					</div>
+   					
+   					<div class = "secG_mainMent secG_mainMent2 secG_mainMent2_1">때문에 저희는 어떤문제를 마주했을때 이를 기회로 여겨 해결방안을 탐구 합니다. </div>
+   					
+   					
+   					<div class = "secG_subTopicBox secG_subTopicBox1">
+   						<svg version="1.1" class="secG_subTopic" x="0px" y="0px" viewBox="0 0 448.667 79.115" enable-background="new 0 0 448.667 79.115" xml:space="preserve">
+<g>
+	<g>
+		<path class = "secG_subTopic_path" d="M68.125,27.837v6.668h22.479v11.893H68.125V63.17H54.789V15.945h38.014v11.892H68.125z"/>
+		<path class = "secG_subTopic_path" d="M97.75,39.522c0-13.267,11.755-24.402,25.709-24.402c13.955,0,25.709,11.136,25.709,24.402
+			c0,13.268-11.754,24.473-25.709,24.473C109.505,63.995,97.75,52.79,97.75,39.522z M135.42,39.522
+			c0-6.668-5.499-12.304-11.961-12.304c-6.461,0-11.961,5.636-11.961,12.304c0,6.737,5.5,12.374,11.961,12.374
+			C129.921,51.896,135.42,46.26,135.42,39.522z"/>
+		<path class = "secG_subTopic_path" d="M182.987,63.17L173.02,48.94h-4.125V63.17h-13.336V15.945h22.616c10.586,0,18.079,6.806,18.079,16.498
+			c0,6.736-3.575,12.03-9.349,14.711l11.273,16.017H182.987z M168.895,36.843h8.181c3.162,0,5.431-1.856,5.431-4.4
+			c0-2.543-2.269-4.399-5.431-4.399h-8.181V36.843z"/>
+		<path class = "secG_subTopic_path" d="M235.778,47.634L217.63,15.945h15.26l9.556,19.179l10.104-19.179h14.642l-18.078,31.689V63.17h-13.336
+			V47.634z"/>
+		<path class = "secG_subTopic_path" d="M269.116,39.522c0-13.267,11.755-24.402,25.71-24.402c13.954,0,25.708,11.136,25.708,24.402
+			c0,13.268-11.754,24.473-25.708,24.473C280.871,63.995,269.116,52.79,269.116,39.522z M306.786,39.522
+			c0-6.668-5.5-12.304-11.96-12.304c-6.462,0-11.962,5.636-11.962,12.304c0,6.737,5.5,12.374,11.962,12.374
+			C301.286,51.896,306.786,46.26,306.786,39.522z"/>
+		<path class = "secG_subTopic_path" d="M326.512,42.204V15.945h13.336v25.572c0,6.049,3.781,10.38,9.143,10.38s9.143-4.331,9.143-10.38V15.945
+			h13.336v26.259c0,12.785-9.279,21.791-22.479,21.791C335.793,63.995,326.512,54.989,326.512,42.204z"/>
+		<path class = "secG_subTopic_path" d="M377.999,55.884c0-4.125,3.506-7.768,8.111-7.768c4.262,0,7.768,3.643,7.768,7.768
+			c0,4.468-3.506,8.111-7.768,8.111C381.504,63.995,377.999,60.352,377.999,55.884z"/>
+	</g>
+</g>
+</svg>
+   					</div>
+   					
+   					<div class = "secG_mainMent secG_subMent1 secG_subMent1_1">우리와 함께 더나은 미래를 설계하십시오.
+   						<p class = "link_page secG_link_page">채용 정보</p>
+   					</div>
+   					
+   					
+   				</div>
+   			</div>
+   			
+   			
+   		</section>
+   		
+   		<section id = "secH">
+   			<div class = "secH_main_topicBox">
+   				<svg version="1.1" class="secH_main_topic" x="0px" y="0px"viewBox="0 0 448.667 79.115" enable-background="new 0 0 448.667 79.115" xml:space="preserve">
+<g>
+	<path class = "secH_main_topic_path" d="M71.859,48.898v11.893H36.527V13.566h13.335v35.332H71.859z"/>
+	<path class = "secH_main_topic_path"  d="M75.776,37.145c0-13.268,11.754-24.403,25.709-24.403c13.954,0,25.709,11.136,25.709,24.403
+		c0,13.267-11.755,24.472-25.709,24.472C87.531,61.616,75.776,50.411,75.776,37.145z M113.446,37.145
+		c0-6.668-5.5-12.305-11.961-12.305c-6.462,0-11.961,5.637-11.961,12.305c0,6.736,5.499,12.373,11.961,12.373
+		C107.947,49.518,113.446,43.881,113.446,37.145z"/>
+	<path class = "secH_main_topic_path"  d="M131.798,37.145c0-13.268,11.754-24.403,25.709-24.403c7.562,0,14.436,3.23,19.179,8.317l-9.83,8.593
+		c-2.2-2.887-5.637-4.812-9.349-4.812c-6.462,0-11.961,5.637-11.961,12.305c0,6.736,5.499,12.373,11.961,12.373
+		c3.781,0,7.149-1.925,9.417-4.812l9.761,8.523c-4.743,5.155-11.617,8.387-19.179,8.387
+		C143.553,61.616,131.798,50.411,131.798,37.145z"/>
+	<path class = "secH_main_topic_path"  d="M211.949,54.467H195.52l-2.406,6.324H178.06l18.147-47.225h15.054l18.147,47.225h-15.054L211.949,54.467z
+		 M208.168,44.637l-4.399-11.479L199.3,44.637H208.168z"/>
+	<path class = "secH_main_topic_path"  d="M240.338,25.458h-13.955V13.566h41.245v11.892h-13.955v35.333h-13.335V25.458z"/>
+	<path class = "secH_main_topic_path"  d="M273.539,13.566h13.336v47.225h-13.336V13.566z"/>
+	<path class = "secH_main_topic_path"  d="M293.542,37.145c0-13.268,11.754-24.403,25.708-24.403c13.955,0,25.709,11.136,25.709,24.403
+		c0,13.267-11.754,24.472-25.709,24.472C305.296,61.616,293.542,50.411,293.542,37.145z M331.211,37.145
+		c0-6.668-5.499-12.305-11.961-12.305c-6.461,0-11.961,5.637-11.961,12.305c0,6.736,5.5,12.373,11.961,12.373
+		C325.712,49.518,331.211,43.881,331.211,37.145z"/>
+	<path class = "secH_main_topic_path"  d="M351.351,13.566h13.335l18.424,25.296V13.566h13.335v47.225H383.11l-18.424-25.297v25.297h-13.335V13.566z"
+		/>
+</g>
+</svg>
+   			</div> <!--end secH_main_topicBox-->
+   			<!--본사/지사-->
+   			<div class = "secH_choiceTopic">
+   				<p class = "secH_head secH_head1">본사</p>
+   				<p class = "secH_mid">&nbsp;/&nbsp;</p>
+   				<p class = "secH_branch secH_branch2">지사</p>
+   			</div>
+   			
+   			<!--지도-->
+   			<div class = "secH_map">
+   				<div class = "secH_headMapBox">
+   					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3769.3187279697604!2d126.96864205375987!3d37.399134654545!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357b5e3b894f66dd%3A0xade1041ebf15a01a!2zKOyjvCnsnbjtlLzslYTrk5w!5e0!3m2!1sko!2skr!4v1596172732676!5m2!1sko!2skr" class = "secH_headMap" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+   				</div>
+   				
+   				<div class = "secH_branchMapBox">
+   					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1582.6020685206008!2d127.02445355822559!3d37.503103222804455!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357ca3e275cc653d%3A0xbc3037f0bcc318b3!2z7ISc7Jq47Yq567OE7IucIOqwleuCqOq1rCDsl63sgrzrj5kg6rCV64Ko64yA66GcIDQ1Ng!5e0!3m2!1sko!2skr!4v1596172827999!5m2!1sko!2skr" class = "secH_branchMap" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+   				</div>
+   			</div>
+   			
+   			
+   			<!--주소-->
+   			<div class = "secH_addressTopic">
+				<p class = "secH_headAddress"><span class = "secH_bold">Address | </span>경기도 안양시 동안구 벌말로 123 A-1805(관양동, 평촌 스마트베이) <span class = "secH_bold">(주)인피아드</span> <span class = "secH_bold">Tel |</span> 1688-9785 <span class = "secH_bold">Fax |</span> 031-442-9960</p>
+				<p class = "secH_branchAddress"><span class = "secH_bold">Address | </span>서울시 강남구 강남대로 456 한석타워 13층 <span class = "secH_bold">Tel |</span> 1688-9785 <span class = "secH_bold">Fax | </span>031-446-9960</p>
+   			</div>
+   		</section>
+   		
+   		
+   		<section id = "secI">
+   			<div class= "secI_inpiad_LogoTypeBox">
+   				<svg version="1.1" class="secI_inpiad_Logo"  x="0px" y="0px" viewBox="0 0 316.092 64.241" enable-background="new 0 0 316.092 64.241" xml:space="preserve">
+<g>
+	<path class = "secI_inpiad_Logo_path" d="M175.441,3.036h-7.615c-3.019,0-5.5,2.747-5.5,6.104v45.963c0,3.35,2.481,6.102,5.5,6.102h7.615
+		c3.023,0,5.486-2.752,5.486-6.102V9.141C180.928,5.783,178.465,3.036,175.441,3.036z"/>
+	<path class = "secI_inpiad_Logo_path" d="M23.018,3.036h-7.627c-3.024,0-5.486,2.747-5.486,6.104v45.963c0,3.35,2.462,6.102,5.486,6.102h7.627
+		c3.014,0,5.484-2.752,5.484-6.102V9.141C28.502,5.783,26.031,3.036,23.018,3.036z"/>
+	<path class = "secI_inpiad_Logo_path" d="M86.241,4.087h-7.146c-2.307,0-4.181,1.868-4.181,4.176v22.73L57.027,6.117
+		c-0.066-0.081-0.138-0.168-0.207-0.249c-0.666-1.074-1.85-1.781-3.217-1.781h-7.91c-2.094,0-3.788,1.696-3.788,3.791v47.243
+		c0,2.087,1.694,3.782,3.788,3.782h7.91c2.097,0,3.802-1.695,3.802-3.782V33.174l17.962,24.968c0.417,0.578,2.928,1.914,3.729,1.914
+		h7.146c2.303,0,4.183-1.877,4.183-4.184V8.263C90.424,5.955,88.544,4.087,86.241,4.087z"/>
+	<path class = "secI_inpiad_Logo_path" d="M306.044,29.844c-0.638-6.481-3.444-12.496-8.087-17.174c-5.293-5.335-12.336-8.317-19.82-8.389
+		c-0.094-0.006-0.316-0.015-0.316-0.015c-0.137,0-0.266,0-0.383,0h-0.046c-0.204-0.005-0.409-0.016-0.62-0.016
+		c-0.225,0-0.429,0.011-0.644,0.016h-3.357V4.251h-14.579c-2.722,0-4.916,2.207-4.916,4.92v4.044v14.583v4.036
+		c0,2.721,2.194,4.919,4.916,4.919h9.653c1.687,0,3.28-0.885,4.175-2.322c1.223-1.943,0.539-4.016,0.713-6.133
+		c0.271-2.984,3.203-4.4,5.98-4.4c0.299,0,0.59,0.017,0.877,0.045c0.862,0.183,1.67,0.482,2.424,0.885
+		c-0.026-0.016-0.068-0.027-0.102-0.038c2.74,1.44,4.643,4.267,4.771,7.541v0.017c0,0.09,0,0.203,0,0.3
+		c0,4.896-3.994,8.87-8.885,8.87h-4.95V41.5H258.27c-2.711,0-4.925,2.21-4.925,4.918v9.671c0,2.707,2.214,4.912,4.925,4.912h14.448
+		v0.014h3.422c0.203,0.006,0.407,0.018,0.647,0.018c0.195,0,0.389-0.012,0.604-0.012h0.046c0.117-0.006,0.246-0.006,0.361-0.006
+		c0.084,0,0.162-0.008,0.242-0.008c1.625-0.064,1.625-0.064,1.683-0.064c8.321-0.562,15.642-4.724,20.456-10.895
+		c0,0,0.008-0.014,0.032-0.049c-0.019,0.035-0.032,0.049-0.051,0.081c0,0,0.295-0.36,0.735-1.003
+		c1.201-1.68,2.225-3.496,3.045-5.412c0.818-1.883,1.543-4.059,1.855-6.381c0.084-0.52,0.154-1.045,0.213-1.564
+		c0-0.069,0.014-0.136,0.014-0.195c0.021-0.126,0.031-0.247,0.045-0.375c0.005-0.088,0.02-0.176,0.025-0.271
+		c0.003-0.107,0.013-0.226,0.018-0.336c0.007-0.111,0.007-0.22,0.027-0.326c0-0.094,0.004-0.193,0.008-0.299
+		c0-0.126,0.014-0.262,0.023-0.396c0-0.076,0-0.15,0-0.24c0.008-0.207,0.008-0.42,0.008-0.637h0.01
+		C306.188,31.694,306.139,30.761,306.044,29.844z"/>
+	<path class = "secI_inpiad_Logo_path" d="M248.124,55.353L229.268,6.274c-0.547-1.395-1.889-2.325-3.387-2.325h-12.973
+		c-1.504,0-2.852,0.931-3.382,2.325l-18.865,49.078c-0.918,2.385,0.839,4.937,3.384,4.937h10.17c1.519,0,2.861-0.933,3.397-2.331
+		l1.093-2.877c0.535-1.402,1.876-2.341,3.395-2.341h7.84v-0.005h2.277c1.321,0,2.27-1.287,1.878-2.563l-2.13-7.017
+		c-0.256-0.829-1.027-1.398-1.9-1.398h-2.291v-0.005h-2.514c-0.971,0-1.645-0.976-1.295-1.886l4.18-10.907
+		c0.449-1.182,2.121-1.182,2.59,0l2.809,7.372l1.357,3.535c0.084,0.209,3.863,11.473,5.615,16.376l0.65,1.716
+		c0.535,1.398,1.89,2.331,3.395,2.331h10.18C247.281,60.289,249.037,57.737,248.124,55.353z"/>
+	<path class = "secI_inpiad_Logo_path" d="M130.094,3.949h-23.676c-1.82,0-3.297,1.483-3.297,3.304v49.736c0,1.82,1.477,3.3,3.297,3.3h9.312
+		c1.816,0,3.297-1.479,3.297-3.3V46.604c0,0,0-0.01,0-0.027V25.622v-0.038v-3.903c0-1.813,1.474-3.295,3.287-3.295h6.473
+		c3.78,0,6.472,2.223,6.472,5.244c0,3.031-2.691,5.246-6.472,5.246h-0.208h-2.592c-1.292,0-2.341,1.056-2.341,2.35v9.752
+		c0,1.286,1.049,2.332,2.341,2.332h3.396l0,0h0.712c12.635,0,21.566-8.113,21.566-19.68C151.66,12.065,142.729,3.949,130.094,3.949z
+		"/>
+</g>
+</svg>
+   			</div> <!--end <div class= "secG_inpiad_LogoTypeBox">-->
+   			
+   			<div class = "secI_ctnBox">
+   				<div id = "secI_line"></div>
+				<p class = "secI_mainText"><span class = "secI_boldText">직접생산증명원발급번호 : </span>제 201.1-110.4.8호 · <span class = "secI_boldText">물품분류 :</span> 81112299 - 소프트웨어유지 및 지원서비스 <span class = "secI_boldText">소프트웨어 사업자신고번호 : </span>B16-115794 · <span class = "secI_boldText">사업분야 : </span>컴퓨터관련 서비스사업, 패키지소프트웨어 개발공급사업, 디지털콘텐츠 개발서비스사업, 데이터베이스 제작 및 검색서비스사업 <span class = "secI_boldText">기업부설연구소</span>(주)인피아드 연구소 · <span class = "secI_boldText">발급번호 :</span> 제 2015114683호 병역특례 지정병역지정업체 선정(병무청) <span class = "secI_boldText">벤처기업확인발급번호 : </span>제 20160401913호 강소기업인증강소기업 인증(고용노동부) <span class = "secI_boldText">산업디자인전문회사신고확인증 번호 :</span> 제 06840호</p>
+   			</div> <!--end <div class = "secI_ctnBox">-->
+   		</section>
+   		
+   		
+   		
+   		
+   		
+   		<footer id = "foot">
+    		<div id = "foot_alignOutBox">
+    			
+    			<div id = "foot_top_serviceCtn">
+    				<p class = "foot_service_texts">
+    					인피아드는 홈페이지내에서 기본적인 가이드를 제공해 드리고 있습니다. 제작서비스 / 홈페이지 / '가격한눈에보기'버튼 클릭.  참고 바랍니다. <span class = "foot_blank_1600"><br/></span>더욱 자세한 견적 상담을 원하실 경우 '견적문의' 게시판을 이용하여 주시거나, 상담전화1688-9785를 이용하여 전화하여 주십시오. <span class = "foot_blank_1920"><br/></span>
+또한 제작 이후 원활한 홈페이지의 운영을 위한 유지관리 및 마케팅 비용은 부가적 비용으로 발생할 수 있습니다. <span class = "foot_blank_1600"><br/></span>필수사항만 선택하여도 홈페이지 이용에 지장은 없으나, 선택사항 추가 시 편의성 및 홍보적 추가적인 효과를 기대할 수 있습니다.
+    				</p>
+    				
+					<p class = "foot_service_texts">
+						인피아드는 Web Business Total Service를 제공하고 있으며, 홈페이지 제작부터 유지보수,  프로모션 및 웹 컨설팅 서비스를 통합적으로 받아보실<span class = "foot_blank_830"><br/></span> 수 있습니다. <span class = "foot_blank_1920"><br/></span>컨설팅 시 홈페이지 제작 시 온라인 마케팅 초기의 계획부터 실행, 
+사업 운영 지원 등을  통합적으로 제공해드립니다.<span class = "foot_blank_RWD"><br/></span> <span class = "foot_service_texts_bold">컨설턴트의 체계적인 고객 관리로 일관적이고 지속적인 고품질의 서비스를 받으실 수 있습니다.</span>
+					</p>
+    				
+    			</div>
+    		
+    			<div class = "foot_topBlank_line"></div>
+    		
+    			<!--중간 글씨 박스-->
+    			<div class = "foot_import_textBox">
+    				<div class = "foot_import_texts">회사 소개</div>
+    				<div class = "foot_import_texts">이용 약관</div>
+    				<div class = "foot_import_texts">개인정보 취급방침</div>
+    				<div class = "foot_import_texts">이메일 무단 수집 거부</div>
+    				
+    			</div>
+    			
+    			
+    			
+    			
+    			
+    			
+    			
+    			<!--하단 전체박스-->
+    			<div id = "foot_bot_allBox">
+						<!--왼쪽 텍스트 박스-->
+					<div id = "foot_outBox_text">
+
+						<div class = "foot_outBox_top_text">
+							<p class = "foot_info_p foot_info_top_p  foot_info_top_p1">상호 : 주식회사 인피아드 대표이사 : 김인태</p>
+							<p class = "foot_info_p foot_info_top_p"> Tel : 1688-9785 Fax : 031-442-9960</p>
+							<p class = "foot_info_p foot_info_top_p">E-mail : master@inpiad.com</p>
+						</div><!--foot_outBox_top_text-->
+
+						<!--큰화면일때 묶기용-->
+						<div class = "foot_out_down_box">
+
+							<div class = "foot_outBox_mid_text">
+								<p class = "foot_info_p foot_info_mid_p">사업자등록번호 : 138-81-74581 개인정보책임자 : 조성필 이사</p>
+								<p class = "foot_info_p foot_info_mid_p"> 본사 : 경기도 안양시 동안구 벌말로 123 A-1805 (관양동, 평촌스마트베이)</p>
+							</div><!--foot_outBox_mid_text-->
+
+
+
+							<div class = "foot_outBox_bot_text">
+								<p class = "foot_info_p foot_info_bot_p" >서울 : 서울시 강남구 강남대로 456 한석타워 13층</p>
+								<p class = "foot_info_p foot_info_bot_p">2003-2020 INPIAD Co.,Ltd. All Rights Reserved.</p>
+							</div><!--foot_outBox_bot_text-->
+
+						</div> <!--foot_out_down_box-->
+
+					</div> <!--foot_outBox_text-->
+   					
+   					
+   					
+   					
+   					
+   					
+   					<!--오른쪽 아이콘전체를 담는박스-->
+   					<div class = "foot_outBox_right">
+
+   						<!--아이콘들 박스-->
+   						<div class = "foot_inBox_icon">
+   						
+   							<!--신용카드 링크-->
+							<div class = "foot_icon_box foot_icon_box1" onClick = "new_open('https://inpiad.com/kcp/order.php');">
+								<img src = "images/footer/creditCard2.svg" class = "foot_icon foot_credit" />
+							</div>
+
+							<!--kcp 링크-->
+							<div class = "foot_icon_box foot_icon_box2" onClick = "new_open('https://admin8.kcp.co.kr/hp.HomePageAction.do?cmd=apply&host_id=(%EC%A3%BC)%EC%9D%B8%ED%94%BC%EC%95%84%EB%93%9C');">
+								<img src = "images/footer/kcp2.svg" class = "foot_icon foot_kcp" />
+							</div>
+							
+							
+							<!--inicis 링크-->
+							<div class = "foot_icon_box foot_icon_box3" onClick = "new_open('https://www.inicis.com/pg-hosting?cd=hostinglanding&product=inpiad&settlement=N');">
+								<img src = "images/footer/kginicis2.svg" class = "foot_icon foot_inicis" />
+							</div>
+
+							<div class = "foot_icon_box foot_icon_box4" onClick = "new_open('https://www.eximbay.com/homepage/pc/kr/join.do');">
+								<img src = "images/footer/eximbay2.svg" class = "foot_icon foot_exbay" />
+							</div>
+   						
+
+   						</div> <!-- end foot_outBox_icon -->
+   						
+   						<!--로고 박스-->
+						<div class = "foot_inBox_logo">
+								<img src = "images/footer/Logo_foot2.svg" class = "foot_logo" />
+
+						</div> <!--로고 박스-->
+   						
+   						
+   					</div> <!--end foot_outBox_right-->
+   					
+   					
+   					
+   					
+
+    				
+    			</div> <!--end foot_bot_allBox-->
+    			
+    			
+    			
+    			
+    		
+    			
+    		</div><!--foot_alignOutBox-->
+    		
+    		
+    	</footer>
+   		
+	</div> <!--전체를 감싸는 큰박스 container-->
+
+</body>
+</html>

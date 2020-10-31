@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="author" content="Jeon">
+	<title> DRAWWAVE</title>
+	
+	<link href = "favi.ico" rel = "shortcut icon"/>
+
+	<link href = "inc/swiper-bundle.min.css" rel = "stylesheet" />
+	<link href = "inc/SFfont-face.css" rel = "stylesheet"/>
+	<link href = "inc/fontStyle.css" rel = "stylesheet" />
+	<link href = "inc/public.css" rel = "stylesheet" />
+	<link href = "inc/mainStyle.css" rel = "stylesheet" />
+	
+	
+	<!--제이쿼리 라이브러리준비-->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>	
+	<!--네비게이션용 스크립트 파일-->
+	<script src = "inc/nav.js"></script>
+	<!--메인 스크립트 임포트-->
+	<script src = "inc/mainScript.js"></script>
+	
+	
+</head>
+
+<body>
+	<div id = "container">
+		<div id = "navBox">
+			<!--1200px-->
+			<div id = "navInBox">
+				<div id = "logo">
+					<p class = "logo1 font_title3 sf_black">DRAW</p>
+					<p class = "logo2 font_title3 sf_heavy">WAVE</p>
+				</div>
+				
+				<div id = "view"><i class="fas fa-grip-lines view_con"></i></div>
+				
+				<nav id = "navi">
+					<ul id = "main_menu" class = "sf_semibold">
+						<li class = "main_list font_content1 main_list1">HOME</li>
+						<li class = "main_list font_content1 main_list2">ABOUT US</li>
+						<li class = "main_list font_content1">SERVICE</li>
+						<li class = "main_list font_content1">PORTFOLIO</li>
+						<li class = "main_list">
+							Pages<i class="fas fa-angle-down nav_con"></i>
+							<ul class = "sub_menu">
+								<li class = "sub_list font_content3">Dropdown Menu1</li>
+								<li class = "sub_list font_content3">Dropdown Menu2</li>
+								<li class = "sub_list font_content3">Dropdown Menu3</li>
+								<li class = "sub_list font_content3">Dropdown Menu4</li>
+								<li class = "sub_list font_content3">Dropdown Menu5</li>
+							</ul>
+						</li>
+						<li class = "main_list">Blog</li>
+						<li class = "main_list">Contact</li>
+					</ul>
+					
+				</nav>	
+			</div>
+
+		</div>
+		
+		<!--header-->
+		<header id = "head">
+			<div class="swiper-container">
+				<div class="swiper-wrapper">
+					<!--슬라이더-->
+					<div class="swiper-slide" id = "swBimg1">
+						<div class = "head_ctnBox sf_black">
+							<h1 class = "font_title1 head_fontH1">WELCOME TO BASICA!<br/> A PROFESSIONAL DIGITAL DESIGN</h1>
+							<h4 class = "font_subtitle3 head_fontH4 sf_thin">SED MATTIS ENIM IN NULLA BLANDIT TINCIDUNT. <br/>PHASELLUS VEL SEM CONVALLIS, MATTIS EST ID, INTERDUM AUGUE. INTEGER LUCTUS MASSA IN ARCU EUISMOD VENENATIS.</h4>
+						</div>
+					</div>
+					<div class="swiper-slide" id = "swBimg2">
+						<div class = "head_ctnBox sf_black">
+							<h1 class = "font_title1 head_fontH1">POWERFUL AND<br/> RESPONSIVE HTML TEMPLATE</h1>
+							<h4 class = "font_subtitle3 head_fontH3 sf_thin">PHASELLUS ADIPISCING FELIS A DICTUM DICTUM. <br/>LOREM IPSUM DOLOR SIT AMET, CONSECTETUR ADIPISCING ELIT. DONEC AT LIGULA RISUS.</h4>
+							
+							<div class = "head_btn sf_semibold">LEARN MORE</div>
+						</div>
+					</div>
+					<div class="swiper-slide" id = "swBimg3">
+						<div class = "head_ctnBox sf_black">
+							<h1 class = "font_title1 head_fontH1">WORKS SEAMLESSLY<br/> WELL ON ALL DEVICES</h1>
+							<h4 class = "font_subtitle3 head_fontH4 sf_thin">LOREM IPSUM DOLOR SIT AMET, CONSECTETUR ADIPISCING ELIT. <br/>FUSCE VITAE EUISMOD LACUS. MAECENAS IN TEMPOR LECTUS. NAM MATTIS, ODIO UT DAPIBUS ORNARE, LIBERO.</h4>
+							
+							<div class = "head_btn sf_semibold">LEARN MORE</div>
+						</div>	
+					</div>
+				</div>
+				<div class = "swiper-pagination"></div>
+
+				<div class = "swiper-button-prev" id ="swPrev"></div>
+				<div class = "swiper-button-next" id ="swNext"></div>
+			</div>
+		</header>
+		
+		<section id = "secA">
+			<div class = "inBox_A">
+				<div class = "secA_conBox">
+					<i class="fas fa-home secA_con"></i>
+				</div>
+				
+				<h4 class = "font_subtitle2 secA_h4 sf_bold">ALIQUAM IN ADIPISCING</h4>
+				<p class = "font_content2 secA_p sf_thin">Praesent rhoncus mauris ac sollicitudin vehicula. Nam fringilla turpis turpis, at posuere turpis aliquet sit amet condimentum</p>
+				<div class = "btn_A">Read More</div>		
+			</div>
+			
+			
+			
+			<div class = "inBox_A">
+				<div class = "secA_conBox">
+					<i class="fas fa-briefcase secA_con"></i>
+				</div>
+				<h4 class = "font_subtitle2 secA_h4 sf_bold">CURABITUR MOLLIS</h4>
+				<p class = "font_content2 secA_p sf_thin">Praesent rhoncus mauris ac sollicitudin vehicula. Nam fringilla turpis turpis, at posuere turpis aliquet sit amet condimentum</p>
+				<div class = "btn_A">Read More</div>		
+			</div>
+			
+			
+			
+			<div class = "inBox_A">
+				<div class = "secA_conBox">
+					<i class="far fa-calendar-alt secA_con"></i>
+				</div>
+				<h4 class = "font_subtitle2 secA_h4 sf_bold">VIVAMUS MATTIS</h4>
+				<p class = "font_content2 secA_p sf_thin">Praesent rhoncus mauris ac sollicitudin vehicula. Nam fringilla turpis turpis, at posuere turpis aliquet sit amet condimentum</p>
+				<div class = "btn_A">Read More</div>		
+			</div>
+			
+			
+		</section>
+		
+
+		
+		<!--secB-->
+		<section id = "secB">
+		
+		
+			<div class = "main_ctnBox">
+				<div>
+					<h2 class = "font_title1 secB_h2_1 font_title1 sf_heavy">OUR </h2>
+					<h2 class = "font_title1 secB_h2_2 font_title1 sf_light">RECENT WORKS</h2>
+				</div>
+				
+			</div>
+			
+			<ul id = "secB_outBox">
+			
+				<li class = "secB_inBox">
+					<div class = "secB_imgBox">
+						<img src = "images/secB1.png" alt = "imgB" class = "imgB" />
+					</div>
+					
+					<div class = "secB_ctnBox">
+					
+						<div class = "secB_ctnInBox">
+							<h4 class = "font_subtitle3 secB_h4 sf_bold">SETTINGS</h4>
+							<p class = "font_content3 secB_p sf_light">Jacob Cummings</p>
+						</div>
+						
+						<div class = "secB_ctnInBox">
+							<button class = "secB_btn sf_semibold">Take a look</button>
+						</div>
+						
+					</div>
+				</li>
+				
+				
+				<li class = "secB_inBox">
+					<div class = "secB_imgBox">
+						<img src = "images/secB2.png" alt = "imgB" class = "imgB" />
+					</div>
+					
+					<div class = "secB_ctnBox">
+					
+						<div class = "secB_ctnInBox">
+							<h4 class = "font_subtitle3 secB_h4 sf_bold">CAMERA</h4>
+							<p class = "font_content3 secB_p sf_light">Jacob Cummings</p>
+						</div>
+						
+						<div class = "secB_ctnInBox">
+							<button class = "secB_btn sf_semibold">Take a look</button>
+						</div>
+						
+					</div>
+				</li>
+				
+				<li class = "secB_inBox">
+					<div class = "secB_imgBox">
+						<img src = "images/secB3.png" alt = "imgB" class = "imgB" />
+					</div>
+					
+					<div class = "secB_ctnBox">
+					
+						<div class = "secB_ctnInBox">
+							<h4 class = "font_subtitle3 secB_h4 sf_bold">MUSIC</h4>
+							<p class = "font_content3 secB_p sf_light">Jacob Cummings</p>
+						</div>
+						
+						<div class = "secB_ctnInBox">
+							<button class = "secB_btn sf_semibold">Take a look</button>
+						</div>
+						
+					</div>
+				</li>
+				
+				<li class = "secB_inBox">
+					<div class = "secB_imgBox">
+						<img src = "images/secB4.png" alt = "imgB" class = "imgB" />
+					</div>
+					
+					<div class = "secB_ctnBox">
+					
+						<div class = "secB_ctnInBox">
+							<h4 class = "font_subtitle3 secB_h4 sf_bold">SAFARI</h4>
+							<p class = "font_content3 secB_p sf_light">Jacob Cummings</p>
+						</div>
+						
+						<div class = "secB_ctnInBox">
+							<button class = "secB_btn sf_semibold">Take a look</button>
+						</div>
+						
+					</div>
+				</li>
+				
+				<li class = "secB_inBox">
+					<div class = "secB_imgBox">
+						<img src = "images/secB5.png" alt = "imgB" class = "imgB" />
+					</div>
+					
+					<div class = "secB_ctnBox">
+					
+						<div class = "secB_ctnInBox">
+							<h4 class = "font_subtitle3 secB_h4 sf_bold">PHONE</h4>
+							<p class = "font_content3 secB_p sf_light">Jacob Cummings</p>
+						</div>
+						
+						<div class = "secB_ctnInBox">
+							<button class = "secB_btn sf_semibold">Take a look</button>
+						</div>
+						
+					</div>
+				</li>
+				
+				<li class = "secB_inBox">
+					<div class = "secB_imgBox">
+						<img src = "images/secB6.png" alt = "imgB" class = "imgB" />
+					</div>
+					
+					<div class = "secB_ctnBox">
+					
+						<div class = "secB_ctnInBox">
+							<h4 class = "font_subtitle3 secB_h4 sf_bold">GAME CENTER</h4>
+							<p class = "font_content3 secB_p sf_light">Jacob Cummings</p>
+						</div>
+						
+						<div class = "secB_ctnInBox">
+							<button class = "secB_btn sf_semibold">Take a look</button>
+						</div>
+						
+					</div>
+				</li>
+			</ul>	
+		</section>
+		<div id = "secA_bot"></div>
+		
+		<!--secC-->
+		<section id = "secC">
+		
+			<div class = "main_ctnBox">
+				<div>
+					<h2 class = "font_title1 secB_h2_1 sf_heavy">OUR</h2>
+					<h2 class = "font_title1 secB_h2_2 sf_light">SUCCESS STORIES</h2>
+				</div>
+			</div>
+
+			<p class = "ctnBoxC sf_light">We search for possibility of an opportunity within all experience factors seen, 
+				heard, touched and felt by the people and lead such possibility toward 
+				innovation based on our prompt and flexible executive capability.
+			</p>
+			
+			<img src = "images/secBg1.jpg" alt ="섹션이미지" class = "img" />
+		</section>
+		
+		<!--footer-->
+		<div id ="ftWrap">
+			<footer id ="foot">
+				<div id ="ft_outBox">
+					<div id ="ft_us" class = "ft_inBox">
+						<h4 class = "ft_topic sf_bold">Contact Us</h4>
+						<p class = "ft_addr sf_regular"><b>Address:</b> 123 Downtown Avenue, 
+							Manhattan, New York, United States of America
+						</p>
+						<p class = "ft_pNum sf_regular"><b>Phone:</b>+1 123 45678910</p>
+						<p class = "ft_pNum sf_regular"><b>Fax:</b> +1 123 45678910</p>
+						<p class = "ft_pNum sf_regular"> 
+							<b>Email:</b><a href = "mailto:info@yourcompanydomain.com">info@yourcompanydomain.com</a>
+						</p>
+					</div>
+	
+					<div id ="ft_netWorks" class = "ft_inBox">
+						<h4 class = "ft_topic sf_bold">Our Social Networks</h4>
+						<p class = "ft_addr sf_regular">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, 
+							sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam.
+						</p>
+						<div class = "sns_box">
+							<i class="fab fa-facebook-square snsCon"></i>
+							<i class="fab fa-twitter-square snsCon"></i>
+							<i class="fab fa-linkedin snsCon"></i>
+							<i class="fas fa-rss-square snsCon"></i>
+						</div>
+					</div>
+	
+					<div id ="ft_company" class = "ft_inBox">
+						<h4 class = "ft_topic sf_bold">About Our Company</h4>
+						<p class = "ft_addr sf_regular">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, 
+							sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat 
+							volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci.
+						</p>
+					</div>
+				</div>
+				<div class = "ft_copy">© 2014 <a>Basica</a> Bootstrap HTML Template. By <a>Vactual Art.</a>
+				</div>
+			</footer>
+		</div>
+	</div>
+
+	<script src = "inc/swiper-bundle.min.js"></script>
+	<script>
+		var swiper = new Swiper('.swiper-container',{
+			pagination: {el:'.swiper-pagination'},
+			navigation: {nextEl :'.swiper-button-next', prevEl : '.swiper-button-prev'}
+		});
+	</script>
+</body>
+</html>

@@ -1,0 +1,66 @@
+/*---------------------------*/
+#otherTeams_wrap { padding-top:150px; width:100%; 
+    background:url('../images/otT_bg.png') center no-repeat;}
+#otherTeams { width: 85%; margin:auto; } 
+.otT_bCtn { padding-top: 50px; color:#2D4051; border-bottom:2px solid #2D4051; 
+    width:300px; font-size:20px; padding-bottom:3px; margin-bottom:100px;}
+.otT_topic { background:#151C2D; margin-left:50px; box-shadow: 10px 10px 5px #000; }
+#otT_main { margin:100px auto 0; width:80%; display: flex; flex-wrap: wrap; justify-content: space-between;}
+.otT_list {width:45%; margin-bottom:50px; cursor:pointer; }
+.otT_list>div { width:100%;  overflow:hidden; border-radius: 40px;}
+.otTimg{width:100%; box-shadow: 5px 5px 5px #000; transition:.3s;}
+.otT_list>h4 { text-align: center; margin-top: 20px; 
+    font-size:30px; color:#2D4051; transition:.3s;}
+.otT_list:hover>div>.otTimg { transform:scale(1.1);}
+.otT_list:hover>h4 { color:#fff;}
+
+#otT_partners { width: 45%;display: flex; justify-content:center; 
+    align-items: center; font-size:25px; color:#fff;}
+#otT_partners>div>h3 { border-bottom: 3px solid #fff; width:165px; margin: 0  0 20px auto;}
+#otT_ptnBox { display: flex; justify-content:flex-end; }
+
+#foot { width:80%; margin:auto; margin-top:50px; padding-bottom: 50px;}
+#addr>p { color: #33455E;font-size: 16px; margin-bottom:10px;}
+#addr>div { display:flex; justify-content: space-between; align-items: center;}
+#addr_left { display: flex; flex-wrap: wrap; width: 55%; }
+#addr_left>p { margin : 0 20px 5px 0; font-size:15px; color:#171E2D;}
+#addr_right { width: 40%;}
+.logoG {width:300px; margin-left:auto; cursor:pointer;}
+
+
+
+
+/*미디어쿼리*/
+@media screen and (max-width : 1440px) {
+    #otherTeams_wrap {background: url(../images/otT_bgRWD.jpg) center no-repeat;}
+
+} /*end @media screen and (max-width : 1440px)*/
+@media screen and (max-width : 1025px) { 
+    #otherTeams_wrap {padding-top:100px;}
+    .otT_bCtn { padding-top:15px;margin-bottom:30px;}
+    .otT_topic {margin-left:0;}
+    #otT_main {width:90%;}
+    .otT_list {width:100%; margin-bottom:30px;}
+    .otT_list>h4 {font-size:22px;}
+    #otT_partners {width:100%; margin-top:30px;}
+    #otT_partners>div>h3 {margin: 0 auto 15px; font-size: 25px; width:145px; text-align: center;}
+
+    #foot { width:100%;}
+    #addr>p { font-size:14px;}
+    #addr_left {width:65%;}
+    #addr_left>p { font-size:12px; margin-right:10px;}
+    #addr_right {width:30%;}
+    .logoG {width:100%;}
+}/*@media screen and (max-width : 1025px)*/
+
+@media screen and (max-width : 650px) {
+    #otherTeams_wrap {padding-top:60px;} 
+    .otT_bCtn {margin-bottom:14px; text-align: center;}
+    #otT_main {width:100%; margin-top:60px;}
+    #otT_partners { display: none;}
+    #addr>p {font-size:12px; padding-bottom:3px; border-bottom: 1px solid #33455e;}
+    #addr>div {display:block;}
+    #addr_left {width:100%;}
+    #addr_left>p {font-size:10px;}
+    #addr_right {margin-top:15px; width:45%;margin-left:auto;margin-right:10px;}
+} /*end @media screen and (max-width : 650px)*/

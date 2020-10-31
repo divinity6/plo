@@ -1,0 +1,549 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<!--아이폰에서 파란색링크없애기용-->
+<meta name="format-detection" content="telephone=no" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="author" content="Jeon">
+	<title> inpiad </title>
+   	<!--페비콘링크-->
+	<link href = "images/favicon.ico" rel = "shortcut icon" />
+	<!--nav 스타일 파일 링크-->
+	<link href = "css/nav.css" rel="stylesheet" />
+	<!--footer 스타일 파일 링크 -->
+	<link href = "css/foot.css" rel = "stylesheet" />
+	
+	<!--closedStyle 파일 링크-->
+	<link href = "css/closedStyle.css" rel = "stylesheet" />
+	
+	
+	 <!--JQuery 라이브러리 준비-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!--nav 스크립트 파일 준비-->
+    <script src = "js/nav.js"></script>
+    <!--foot 스크립트 파일 준비-->
+    <script src = "js/foot.js"></script>
+</head>
+
+<body>
+
+	<!--전체를 감싸는 큰박스 container-->
+    <div id = "container">
+       
+       
+       
+        <!--naviBox_1 백그라운드를 깔기위함-->
+        <div id = "naviBox_1" class = "naviBox">
+            <!--nav실제 내용컨텐츠-->
+            <nav id = "navi_1" class = "navi">
+                <!--반응형 view 네비-->
+                <div id = "view_nav1"><i class="fas fa-minus view_nav_icon"></i></div>
+                
+                <div id = "logo_OutBox">
+                    <div id = "logoBoxNav">
+                        <img src = "images/Navi/MainLogo_Navi.svg" alt = "MainLogo" id = "logo_Mnav" />
+                    </div>
+
+                </div>
+                
+                <ul id = "mainMenu_1">
+                    
+                    
+                    <li class = "mainList_1">
+                        <h4 class = "mainListFont">포트폴리오</h4>
+                        
+                        <div class = "subMenu_1 subMenu_Line">
+                            <img src = "images/Navi/SubLine_Navi.svg" alt = "subNavLine" id = "sub_NavLine" />
+                        </div>
+                        
+                    </li>
+                    
+                    
+                    <li class = "mainList_1">
+                        <h4 class = "mainListFont">패키지 상품</h4>
+                        <ul class = "subMenu_1">
+                            <li class = "subList_1">프리미엄 팩</li>
+                            <li class = "subList_1">스탠다드 팩</li>
+                            <li class = "subList_1">스페셜 팩</li>
+                            <li class = "subList_1">솔루션 팩</li>
+                            <li class = "subList_1">브랜딩 팩</li>
+                            <li class = "subList_1">키퍼 팩</li>
+                        </ul>
+                        
+                    </li>
+                    
+                    
+                    <li class = "mainList_1">
+                        <h4 class = "mainListFont">디자인 상품</h4>
+                        <ul class = "subMenu_1">
+                            <li class = "subList_1">
+                                웹페이지 디자인</li>
+                            <li class = "subList_1">
+                                쇼핑몰 디자인</li>
+                            <li class = "subList_1">솔루션</li>
+                            <li class = "subList_1">
+                                편집 디자인</li>
+                        </ul>
+                    </li>
+                    
+                    
+                    <li class = "mainList_1">
+                        <h4 class = "mainListFont">유지관리 상품</h4>
+                        <ul class = "subMenu_1">
+                            <li class = "subList_1">유지 보수</li>
+                            <li class = "subList_1">도메인 / 호스팅</li>
+                            <li class = "subList_1">웹메일 / 문자서비스</li>
+                            <li class = "subList_1">보안 서비스</li>
+                            <li class = "subList_1">전자 결제</li>
+                        </ul>
+                        
+                    </li>
+                    
+                    
+                    <li class = "mainList_1">
+                        <h4 class = "mainListFont">브랜드 설계</h4>
+                        <ul class = "subMenu_1">
+                            <li class = "subList_1">키워드 광고</li>
+                            <li class = "subList_1">배너 광고</li>
+                            <li class = "subList_1">네트워크 광고</li>
+                            <li class = "subList_1">바이럴 광고</li>
+                            <li class = "subList_1">언론홍보 광고</li>
+                            <li class = "subList_1">콘텐츠 광고</li>
+                            <li class = "subList_1">이슈 메이킹</li>
+                        </ul>
+                    </li>
+                    <li class = "mainList_1">
+                        <h4 class = "mainListFont">고객 지원</h4>
+                        <ul class = "subMenu_1">
+                            <li class = "subList_1">마케팅</li>
+                            <li class = "subList_1">수상 내역</li>
+                            <li class = "subList_1">자주하는 질문</li>
+                            <li class = "subList_1">계약 현황</li>
+                            <li class = "subList_1">회사 소개</li>
+                            <li class = "subList_1">채용 정보</li>
+                        </ul>
+                        
+                    </li>
+                    
+                    
+                </ul>
+                
+                <!--폼 전체박스-->
+                <div id = "form_outBox">
+					<!--폼 닫기 버튼-->
+					<div id = "navi_closeBox"><i class="fas fa-times navi_close"></i>
+					</div>
+
+					<!--돋보기아이콘 클릭시 나타나는 폼-->
+					<div id = "form_navi1Box">
+						<input type = "text" id = "form_navi1" required>
+					</div> 
+                </div>
+                
+                
+                <!--돋보기아이콘 search-->
+                <div id = "search_naviBox">
+                    <div id = "search_navi">
+                        <img src = "images/Navi/Magnifier_Navi.svg" alt = "magnifier" id = "search_nav1" />    
+                    </div>
+                </div>
+
+
+                <!--v 아이콘-->
+                <div id = "modal_open_navBox">
+                   
+                    <div id = "modal_open_nav">
+                      <i class="fas fa-edit modal_OpenLine_nav"></i>
+                    </div>
+                </div>
+                
+                
+            </nav>
+
+        </div><!--navi1Box-->
+        
+        <!--네비아래에 깔배경 sub_back-->
+        <div id = "sub_back">
+            
+            <div id = "sub_iconAlign">
+                
+                <div id = "jokeBox_navi"></div>
+                <div id = "sub_navBackIcon">
+                    <img src = "images/Navi/SubLogo_Navi.svg" alt = "subLogo" id = "sub_NavLogo" />
+                </div>
+            </div>
+        </div><!--sub_back-->
+    
+    
+    
+		<!--네비 모달-->
+		<div id = "modal_nav">
+			<!--모달 로고-->
+			<div id = "modal_back">
+				<div id = "modal_nav_Logo">
+					<img src = "images/modal/LogoType_Modal.svg" alt = "modalLogo" id = "modal_logo" />
+				</div>
+			</div>
+			
+			<!--모달 윗캡션-->
+			<div id = "modal_ctnBox">
+				<div id = "modal_ctn">견적 문의</div>
+				<div id = "modal_topLine"></div>
+			</div>
+			
+			<!--폼윗부분-->
+			<div id = "modal_formMenu"> 
+			
+				<div class = "modal_check">
+					<div class = "checkBox_modal">
+						<div class = "inCheckBox_modal"></div>
+					</div>
+            		
+             		<p class = "checkMenu_modal">웹페이지</p>
+              </div>
+              
+              <div class = "modal_check">
+					<div class = "checkBox_modal">
+						<div class = "inCheckBox_modal"></div>
+					</div>
+					
+					<p class = "checkMenu_modal">쇼핑몰</p>
+               </div>
+               
+               
+               <div class = "modal_check">
+					<div class = "checkBox_modal">
+						<div class = "inCheckBox_modal"></div>
+					</div>
+					
+					<p class = "checkMenu_modal">유지관리</p>
+               </div>
+               
+               
+               <div class = "modal_check">
+              	 <div class = "checkBox_modal">
+              	 	<div class = "inCheckBox_modal"></div>
+              	 </div>
+              	 
+              	 <p class = "checkMenu_modal">디자인</p>
+               </div>
+			</div>
+			
+			<!--중요 폼부분-->
+			<ul id = "modal_formLine">
+			
+				<li class = "modal_inputBox">
+					<input type = "text" class = "modal_formText" placeholder = "고객사"
+					required />
+					<p class = "modal_text">귀하의 회사명을 입력해주세요</p>
+				</li>
+				
+				<li class = "modal_inputBox">
+					<input type = "text" class = "modal_formText" placeholder = "담당자"
+					required />
+					<p class = "modal_text">현재 문의를 남겨준 담당자를 입력하세요</p>
+				</li>
+				
+				<li class = "modal_inputBox">
+					<input type = "text" class = "modal_formText" placeholder = "E-MAIL"
+					required />
+					<p class = "modal_text">이메일을 입력해주시면 견적서를 발송해 드립니다</p>
+				</li>
+				
+			</ul>
+			
+			<!--전화번호 부분-->
+			<div id = "modal_phoneBox">
+					<input type = "text" class = "modal_phone" placeholder = "연락처"
+					required />
+					<input type = "text" class = "modal_phone" required />
+					<input type = "text" class = "modal_phone" required />				
+			</div>
+			
+			<!--기타사항 부분-->
+    		<div id = "modal_otherBox">
+    			<input type = "text" class = "modal_formTextBig" placeholder = "기타 문의사항"
+					required />
+					
+				<div id = "modal_checkBot">
+					
+					<div class = "modal_check">
+						<div class = "checkBox_modal">
+							<div class = "inCheckBox_modal"></div>
+						</div>
+
+						<p class = "checkMenu_modal checkMenu_text2">파일 첨부하기</p>
+              		</div>
+              
+              		<div class = "modal_check">
+						<div class = "checkBox_modal">
+							<div class = "inCheckBox_modal"></div>
+						</div>
+
+						<p class = "checkMenu_modal checkMenu_text2">약관 보기</p>
+               		</div>
+					
+				</div>
+				
+					
+    		</div><!--기타사항 부분-->
+    		
+    		<!--보내기 박스-->
+    		<div id = "modal_submitBox">
+    				<i class="fas fa-chevron-down modal_submit"></i>
+    		</div>
+			
+			<div class = "RWD_blank_modal"></div>
+		</div><!--네비 모달-->
+   		
+   		<!--blank_box-->
+   		<div id = "blank_Box">
+   			<div id = "closebox_blank"><i class="fas fa-times blank_close"></i></div>
+   		</div>
+   		
+   		
+   		
+   		
+   		
+   		<!--section A부분-->
+   		<div id = "top_topic"><p class= "top_topic_p">MAINTENANCE SERVICE</p></div>
+   		<section id = "secA">
+   			
+   			
+   			
+   			<div id = "secA_ctn">
+   				<h1 class = "secA_topic">인피아드는 현재 유지보수 작업중입니다</h1>
+   				<p class = "secA_light_topic">인피아드는 더나은 내일을 위하여 웹페이지 유지보수 작업중입니다. 다음에 다시 방문해 주십시오. 급한 용무가있으신분은 아래전화번호로 연락하여 주시거나 나문의를 남겨주세요</p>
+   				
+   				<div id = "secA_line"></div>
+   				
+   				<h4 class = "secA_callNum">1688-9785</h4>
+   			</div>
+   			
+   			
+   			<div id = "secA_contents_box">
+   					<p class = "secA_contents_texts">제1조 (목적)
+본 약관(이하 "약관")은 (주)인피아드와 회원에 관한 제반사항을 규정함을 목적으로 합니다.
+
+제2조 (용어의 정의)
+'회원'은 (주)인피아드에 개인정보를 제공하여 회원등록을 한 사람으로서 (주)인피아드가 제공하는 서비스를 계속적으로 이용할 수 있는 사람을 말합니다.
+
+제3조 (약관의 게시 및 변경)
+1. (주)인피아드는 약관의 규제 등에 관한 법률, 전자거래기본법, 정보통신망이용촉진등에관한법률, 소비자보호법 등 관련법을 위배하지 않는 범위에서 이 약관을 개정할 수 있습니다. 2. (주)인피아드가 약관을 개정할 경우에는 적용일자 및 개정사유를 이메일 혹은 사이트에서 공지합니다.
+3. 전항의 방법으로 변경 고지된 약관은 기존 회원에게도 유효하게 효력이 발생합니다. 4. 이 약관에서 정하지 아니한 사항과 이 약관의 해석에 관하여는 관계법령 또는 상관례에 따릅니다.
+
+제4조 (약관 외 준칙 및 관할법원)
+1. 본 약관에 명시되지 않은 사항은 국내 관계법에 준하여 해석합니다. 2. 회원과 (주)인피아드 사이에 분쟁이 발생할 경우 (주)인피아드 사업장 소재지 관할 법원으로 합니다.
+
+제5조 (회원 가입 및 자격)
+1. (주)인피아드가 정한 양식에 따라 회원정보를 기입한 후 회원가입을 신청함으로써 회원으로 등록됩니다. 2. 다음 각 호의 (1)에 해당하는 경우 (주)인피아드가 임의적으로 회원가입을 인정하지 않거나 회원자격을 박탈할 수 있습니다.
+(1) 다른 사람의 명의를 사용하여 신청하였을 경우 (2) 신청 시 필수 내용을 허위로 기재하여 신청하였을 경우 (3) 사회의 안녕질서 또는 미풍양속을 저해할 목적으로 신청하였을 경우 (4) 다른 사람의 (주)인피아드 이용을 방해하거나 그 정보를 도용하는 등 전자거래질서를 위협하는 경우
+(5) (주)인피아드를 이용하여 법령과 이 약관이 금지하거나 공서양속에 반하는 행위를 하는 경우 3. (주)인피아드가 회원자격을 박탈시키는 경우에는 회원등록을 말소합니다. 이 경우 회원에게 이를 통지하고, 회원등록 말소 전에 소명할 기회를 부여합니다.
+
+제6조 (개인정보의 취득 및 이용)
+1. (주)인피아드는 고객으로부터 각종 개인신상에 관한 정보를 제공받을 수 있으며 제공받은 정보는 (주)인피아드가 제공하는 서비스를 고객이 효율적으로 이용할 수 있도록 하는데 사용될 수 있습니다. 2. (주)인피아드는 고객으로부터 취득한 신상정보를 고객의 사전 동의 없이 제3자에게 제공할 수 없습니다. 단, 다음 각 호의 (1)에 해당하는 경우에는 예외로 합니다.
+(1) 도메인 이름에 대한 후이즈(whois) 서비스를 제공하는 경우 (2) 전기통신기본법 등 관계법령에 의하여 국가기관의 요청에 의한 경우 (3) 범죄에 대한 수사상의 목적이 있거나 정보통신윤리위원회의 요청이 있는 경우 (4) 업무상 연락을 위하여 회원의 정보(성명, 주소, 전화번호)를 사용하는 경우
+(5) 은행업무상 관련사항에 한하여 일부 정보를 공유하는 경우 (6) 통계작성, 홍보자료, 학술연구 또는 시장조사를 위하여 필요한 경우로서 특정고객임을 식별할 수 없는 형태로 제공되는 경우
+
+제7조 (회원 탈퇴)
+1. 회원은 (주)인피아드에 언제든지 탈퇴를 요청할 수 있으며 (주)인피아드는 즉시 회원탈퇴를 처리합니다. 2. 단, 회원이 (주)인피아드에서 이용 중인 서비스의 만기일이 지나지 않은 경우 (주)인피아드는 탈퇴를 처리하지 않습니다.
+
+제8조 (회원에 대한 통지)
+1. (주)인피아드가 회원에 대한 통지를 하는 경우, 회원이 (주)인피아드에 제출한 전자우편 주소로 할 수 있습니다. 2. (주)인피아드는 불특정다수 회원에 대한 통지의 경우 (주)인피아드 게시판에 게시함으로서 개별 통지에 갈음할 수 있습니다.
+
+제9조 ((주)인피아드의 의무)
+1. (주)인피아드는 본 약관이 정하는 바에 따라 지속적이고 안정적인 서비스를 제공하는데 최선을 다하여야 합니다. 2. (주)인피아드는 항상 등록자의 정보를 포함한 개인신상정보에 대하여 관리적, 기술적 안전조치를 강구하여 정보보안에 최선을 다하여야 합니다.
+3. (주)인피아드는 공정하고 건전한 운영을 통하여 전자상거래 질서유지에 최선을 다하고 지속적인 연구개발을 통하여 양질의 서비스를 제공함으로써 고객만족을 극대화하여 인터넷 사업 발전에 기여합니다. 4. (주)인피아드는 고객으로부터 제기되는 불편사항 및 문제에 대해 정당하다고 판단될 경우 우선적으로 그 문제를 즉시 처리해야 합니다. 단, 신속한 처리가 곤란할 경우, 고객에게 그 사유와 처리일정을 즉시 통보하여야 합니다.
+5. (주)인피아드는 소비자 보호단체 및 공공기관의 소비자 보호업무의 추진에 필요한 자료 등의 요구에 적극 협력합니다.
+
+제10조 (회원의 의무)
+1. 아이디(ID)와 암호(password)에 관한 모든 관리의 책임은 회원에게 있습니다. 2. 회원은 아이디와 암호를 제3자가 알 수 있도록 해서는 안 됩니다. 3. 회원은 본 약관 및 관계법령에서 규정한 사항을 준수해야 합니다.
+4. 다음 각 호의 1에 해당하는 행위를 할 경우 이용권리가 박탈됩니다. (1) 범죄와 결부된다고 객관적으로 판단되는 행위 (2) 기타 관계법령에 위배되는 행위
+
+제11조 (이용요금의 정산방법)
+1. 신규 서비스의 이용요금 정산은 서비스 개통일+1일을 기준으로 하여 회사가 정하고 있는 납부주기에 따라서 납부 일자와 납부금액을 산정합니다. 2. 선납한 고객이 서비스 이용 중에 서비스를 변경하거나 해지하는 경우에 현재 서비스의 사용금액과 잔액에 대한 계산은 다음 각 호와 같이합니다.
+(1) 사용금액 = [선납 월할금액 x 전월까지 사용월수] + [선납 일할금액 x 당월 사용일수] * 선납 월할금액 = 선납금액 / 선납개월 * 선납 일할금액 = 선납 월할금액 / 30일 * 초과 사용된 자원이 있는 경우, 자원의 사용량을 일할 계산으로 대체하여 사용금액을 정산합니다.
+(2) 잔액 = 선납금액 - 사용금액
+단, 해지고객 또는 서비스를 변경하는 고객이 선납금액에 할인율 적용을 받은 경우 사용금액은 할인율이 적용되지 않은 정상금액을 기준으로 계산합니다.
+3. 이용요금을 선납한 고객이 서비스 이용 중에 중도해지를 하는 경우에 이용요금의 정산은 이용개시일로부터 해지일까지의 이용요금을 할인율이 적용되지 않는 회사의 정상적인 월납 요금을 기준으로 일할 계산한 후 선납한 이용요금에서 사용금액을 제외한 잔액의 90%를 정산하여 중도해지 신청일로부터 15일 이내에 환불합니다. 환불되지 않는 10%는 고객이 이용을 약정한 기한 내에 고객의 귀책사유로 서비스를 해지한 위약금으로 처리합니다.
+4. 후납하는 고객이 서비스 이용 중에 서비스를 변경하거나 해지하는 경우에 해당월의 서비스의 사용금액에 대한 계산은 다음과 같이 합니다.
+(1) 서비스 변경 사용금액변경 사용금액 = [기존서비스 이용요금 ÷ 30일 x 당월 서비스이용일수] + [신규서비스 이용요금 ÷ 30일 x 당월 서비스잔여일수] (2) 서비스 해지 사용금액해지 사용금액 = 당월서비스 이용요금 ÷ 30일 x 당월 서비스이용일수
+
+[ 부 칙 ] (시행일)
+본 약관은 2007년 4월 1일부터 시행합니다.</p>
+   			</div>
+   			
+   			
+   			
+   		</section>
+   		
+   		
+   		
+   		
+   		
+   		
+   		
+   		
+   		
+   		
+   		
+   		
+   		
+   		
+   		
+   		
+   		
+   		
+   		
+   		
+   		
+   		
+   		
+   		
+   		
+   		
+   		
+   		
+   		
+   		
+   		
+   		
+   		<footer id = "foot">
+    		<div id = "foot_alignOutBox">
+    			
+    			<div id = "foot_top_serviceCtn">
+    				<p class = "foot_service_texts">
+    					인피아드는 홈페이지내에서 기본적인 가이드를 제공해 드리고 있습니다. 제작서비스 / 홈페이지 / '가격한눈에보기'버튼 클릭.  참고 바랍니다. <span class = "foot_blank_1600"><br/></span>더욱 자세한 견적 상담을 원하실 경우 '견적문의' 게시판을 이용하여 주시거나, 상담전화1688-9785를 이용하여 전화하여 주십시오. <span class = "foot_blank_1920"><br/></span>
+또한 제작 이후 원활한 홈페이지의 운영을 위한 유지관리 및 마케팅 비용은 부가적 비용으로 발생할 수 있습니다. <span class = "foot_blank_1600"><br/></span>필수사항만 선택하여도 홈페이지 이용에 지장은 없으나, 선택사항 추가 시 편의성 및 홍보적 추가적인 효과를 기대할 수 있습니다.
+    				</p>
+    				
+					<p class = "foot_service_texts">
+						인피아드는 Web Business Total Service를 제공하고 있으며, 홈페이지 제작부터 유지보수,  프로모션 및 웹 컨설팅 서비스를 통합적으로 받아보실<span class = "foot_blank_830"><br/></span> 수 있습니다. <span class = "foot_blank_1920"><br/></span>컨설팅 시 홈페이지 제작 시 온라인 마케팅 초기의 계획부터 실행, 
+사업 운영 지원 등을  통합적으로 제공해드립니다.<span class = "foot_blank_RWD"><br/></span> <span class = "foot_service_texts_bold">컨설턴트의 체계적인 고객 관리로 일관적이고 지속적인 고품질의 서비스를 받으실 수 있습니다.</span>
+					</p>
+    				
+    			</div>
+    		
+    			<div class = "foot_topBlank_line"></div>
+    		
+    			<!--중간 글씨 박스-->
+    			<div class = "foot_import_textBox">
+    				<div class = "foot_import_texts">회사 소개</div>
+    				<div class = "foot_import_texts">이용 약관</div>
+    				<div class = "foot_import_texts">개인정보 취급방침</div>
+    				<div class = "foot_import_texts">이메일 무단 수집 거부</div>
+    				
+    			</div>
+    			
+    			
+    			
+    			
+    			
+    			
+    			
+    			<!--하단 전체박스-->
+    			<div id = "foot_bot_allBox">
+						<!--왼쪽 텍스트 박스-->
+					<div id = "foot_outBox_text">
+
+						<div class = "foot_outBox_top_text">
+							<p class = "foot_info_p foot_info_top_p  foot_info_top_p1">상호 : 주식회사 인피아드 대표이사 : 김인태</p>
+							<p class = "foot_info_p foot_info_top_p"> Tel : 1688-9785 Fax : 031-442-9960</p>
+							<p class = "foot_info_p foot_info_top_p">E-mail : master@inpiad.com</p>
+						</div><!--foot_outBox_top_text-->
+
+						<!--큰화면일때 묶기용-->
+						<div class = "foot_out_down_box">
+
+							<div class = "foot_outBox_mid_text">
+								<p class = "foot_info_p foot_info_mid_p">사업자등록번호 : 138-81-74581 개인정보책임자 : 조성필 이사</p>
+								<p class = "foot_info_p foot_info_mid_p"> 본사 : 경기도 안양시 동안구 벌말로 123 A-1805 (관양동, 평촌스마트베이)</p>
+							</div><!--foot_outBox_mid_text-->
+
+
+
+							<div class = "foot_outBox_bot_text">
+								<p class = "foot_info_p foot_info_bot_p" >서울 : 서울시 강남구 강남대로 456 한석타워 13층</p>
+								<p class = "foot_info_p foot_info_bot_p">2003-2020 INPIAD Co.,Ltd. All Rights Reserved.</p>
+							</div><!--foot_outBox_bot_text-->
+
+						</div> <!--foot_out_down_box-->
+
+					</div> <!--foot_outBox_text-->
+   					
+   					
+   					
+   					
+   					
+   					
+   					<!--오른쪽 아이콘전체를 담는박스-->
+   					<div class = "foot_outBox_right">
+
+   						<!--아이콘들 박스-->
+   						<div class = "foot_inBox_icon">
+   						
+   							<!--신용카드 링크-->
+							<div class = "foot_icon_box foot_icon_box1" onClick = "new_open('https://inpiad.com/kcp/order.php');">
+								<img src = "images/footer/creditCard.svg" class = "foot_icon foot_credit" />
+							</div>
+
+							<!--kcp 링크-->
+							<div class = "foot_icon_box foot_icon_box2" onClick = "new_open('https://admin8.kcp.co.kr/hp.HomePageAction.do?cmd=apply&host_id=(%EC%A3%BC)%EC%9D%B8%ED%94%BC%EC%95%84%EB%93%9C');">
+								<img src = "images/footer/kcp.svg" class = "foot_icon foot_kcp" />
+							</div>
+							
+							
+							<!--inicis 링크-->
+							<div class = "foot_icon_box foot_icon_box3" onClick = "new_open('https://www.inicis.com/pg-hosting?cd=hostinglanding&product=inpiad&settlement=N');">
+								<img src = "images/footer/kginicis.svg" class = "foot_icon foot_inicis" />
+							</div>
+
+							<div class = "foot_icon_box foot_icon_box4" onClick = "new_open('https://www.eximbay.com/homepage/pc/kr/join.do');">
+								<img src = "images/footer/eximbay.svg" class = "foot_icon foot_exbay" />
+							</div>
+   						
+
+   						</div> <!-- end foot_outBox_icon -->
+   						
+   						<!--로고 박스-->
+						<div class = "foot_inBox_logo">
+								<img src = "images/footer/Logo_foot.svg" class = "foot_logo" />
+
+						</div> <!--로고 박스-->
+   						
+   						
+   					</div> <!--end foot_outBox_right-->
+   					
+   					
+   					
+   					
+
+    				
+    			</div> <!--end foot_bot_allBox-->
+    			
+    			
+    			
+    			
+    		
+    			
+    		</div><!--foot_alignOutBox-->
+    		
+    		
+    	</footer>
+   		
+   		
+   		
+   		
+   		
+   		
+   		
+   		
+   		
+   		
+   		
+   		
+	</div><!--전체를 감싸는 큰박스 container-->
+
+</body>
+</html>

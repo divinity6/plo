@@ -1,0 +1,20 @@
+body { width : 100%; height: 100%; overflow: hidden; }
+#preload {z-index: 990; position: fixed;top:0;left:0; width:100%; height: 150vh;}
+#preContents { position: relative; width:100%; height:100%;}
+
+
+#intro1_wrap {z-index: 40; position:absolute; top:0;left:0; width:100%; height: 100%; background:url('../images/hdB.jpg') center no-repeat; }
+#intro1_blank { height: 100%; background:rgba(0,0,0,.8); }
+#intro1 {z-index: 70; position:relative; height:100vh;}
+.logoB {position: absolute;top:50%;left:50%; transform:translate(-50%,-50%);}
+#intro1_ctn{ display:flex; flex-wrap:wrap; justify-content:flex-end; position: absolute; 
+    top:90%;left:90%; transform:translate(-90%,-90%); width:300px;}
+.intro1_info { text-align: right; color:#fff; margin-top:20px;}
+.intro1_info:first-child{ width:100%; margin-top:0;}
+.intro1_info:nth-child(2){margin-right:40px;}
+.intro1_b {font-size:50px; margin-bottom:5px;}
+.intro1_s{font-size: 15px;}
+#intro1_botCtn { position:absolute; top:92%; left:50%; transform:translate(-50%,-92%);
+     color:#fff; font-size:18px;}
+#nowTimes {position: absolute; top:90%; left: 10%; transform:translate(-10%,-90%); color:#fff;}
+#years { font-size:20px;} #hours { font-size:40px;}

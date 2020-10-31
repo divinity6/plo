@@ -1,0 +1,60 @@
+@charset "urf-8";
+
+/* 구글 노토산스 임포트*/
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+
+
+/*기본 폰트 스타일*/
+.font_style { margin : 0; }
+
+
+
+/*제목 폰트 스타일 적용*/
+.font_title1 { font-size : 2.8rem; font-weight : 900; }
+.font_title2 { font-size : 2.5rem; font-weight : 700; } 
+.font_title3 {  font-size :2.0rem; font-weight : 700;}
+
+
+/*소제목 폰트 스타일 적용*/
+.font_subtitle1 { font-size : 1.8rem; font-weight : 600;  }
+.font_subtitle2 { font-size : 1.5rem; font-weight : 500; }
+.font_subtitle3 { font-size : 1.3rem; font-weight : 400; }
+
+
+
+/*내용 폰트 스타일 적용*/
+.font_content1 { font-size : 1.1rem; font-weight : 400; }
+.font_content2 { font-size : 1rem; font-weight : 300; }
+.font_content3 { font-size : .9rem; font-weight : 300; }
+
+
+
+
+
+
+
+/*폰트스타일*/
+/*
+normal
+기본적인 형태로 보여줍니다.
+italic
+이탤릭체로 보여줍니다.
+oblique
+기울임꼴로 보여줍니다.
+inherit
+상위의 요소의 font-style을 물려받습니다.
+*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+

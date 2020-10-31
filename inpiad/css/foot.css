@@ -1,0 +1,252 @@
+
+
+
+/*----------------------------------footer---------------------------------------*/
+#foot { width : 100%; background-color : #EDEDED; padding-bottom : 20px; padding-top : 20px;}
+
+#foot_alignOutBox { width : 80%; margin : auto; }
+
+
+/*위쪽 서비스안내 텍스트박스*/
+#foot_top_serviceCtn { }
+.foot_service_texts { font-size : .7rem; color : #999; margin : 0; margin-bottom : 10px; font-weight: 300;}
+.foot_blank_1920 { display : inline; }
+.foot_blank_1600 { display : none; }
+.foot_blank_830 { display : none; }
+.foot_blank_RWD { display : none; }
+
+
+/*중간 가로지르는 선*/
+.foot_topBlank_line { margin : 15px 0;
+	
+	width : 100%; height : 1px;
+	border-bottom : 1px solid #6B6B6B;}
+
+/*선아래 링크텍스트*/
+.foot_import_textBox { display : flex;justify-content: flex-start; align-items: center; margin-bottom : 10px; }
+.foot_import_texts { margin-right : 50px; font-size : .8rem; cursor :pointer; color : #878787;}
+.foot_service_texts_bold { }
+.foot_import_texts:hover { text-decoration: underline;}
+
+
+
+
+/*하단 전체 박스*/
+#foot_bot_allBox { display : flex;justify-content: space-between; align-items: center; }
+
+
+
+/*아래쪽 정렬 텍스트*/
+#foot_outBox_text {  }
+
+.foot_outBox_top_text {display : flex; justify-content: flex-start; align-items : center; font-weight: 300; color : #A8A8A8; }
+
+
+.foot_out_down_box { }
+
+.foot_outBox_mid_text { display : flex; justify-content: flex-start; align-items : center; font-weight: 300; color : #A8A8A8;}
+.foot_outBox_bot_text { display : flex; justify-content: flex-start; align-items : center; font-weight: 300; color : #A8A8A8;}
+
+.foot_info_p {
+	font-size : .75rem;  margin : 0; letter-spacing: -1px; margin-right : 20px;}
+
+
+
+
+.foot_outBox_right { display: flex; align-items: flex-end; }
+
+
+/*푸터 로고박스*/
+.foot_inBox_logo { width : 130px; margin-left : 20px; cursor : pointer; }
+.foot_logo { width : 100%; display: block; }
+
+/*아래쪽 아이콘들*/
+.foot_inBox_icon { display : flex; justify-content: flex-end; align-items: center; }
+.foot_icon_box { margin-right : 15px; cursor : pointer; }
+.foot_icon_box1 { width : 25px; }
+.foot_icon_box2 { width : 30px;}
+.foot_icon_box3 { width : 60px; }
+.foot_icon_box4 { width : 75px; }
+
+.foot_icon { width : 100%; display : block;}
+
+
+
+/*--------------------------미디어 쿼리 1600px-------------------------*/
+@media screen and (max-width : 1600px) {
+	/*------------------------foot------------------------------*/
+	.foot_blank_1600 { display : inline; }
+} /*end @media screen and (max-width : 1600px)*/
+
+
+
+
+
+
+
+
+
+/*--------------------------미디어 쿼리 1300px-------------------------*/
+@media screen and (max-width : 1300px) {
+	 /*------------------------footer---------------------------*/
+	.foot_outBox_mid_text { display : block;}
+	
+}/*@media screen and (max-width : 1300px)*/
+
+
+
+
+
+/*--------------------------미디어 쿼리 1250px-------------------------*/
+@media screen and (max-width : 1250px) {
+	#foot {  }
+	#foot_alignOutBox { display : block; width : 80%; padding-top : 25px; }
+	.foot_blank_RWD { display : inline; }
+	.foot_service_texts_bold { font-weight: 500; font-size: .75rem;}
+	
+
+	#foot_outBox_text { width : 100%;  }
+	
+	
+} /*@media screen and (max-width : 1250px)*/
+
+
+
+
+
+/*--------------------------미디어 쿼리 1200px-------------------------*/
+@media screen and (max-width : 1200px) { 
+	.foot_info_top_p1 { width : 100%;}
+	.foot_outBox_top_text { flex-wrap: wrap;}
+} /*end @media screen and (max-width : 1200px)*/
+
+
+
+
+
+
+
+
+/*--------------------------미디어 쿼리 1020px-------------------------*/
+@media screen and (max-width : 1020px) {
+	.foot_out_down_box { display: flex; flex-wrap: wrap; justify-content: flex-start; align-items: center; }
+	#foot_alignOutBox {  width : 90%; }
+	.foot_info_top_p1 { width : 190px;}
+	.foot_info_p { margin-right : 10px;}
+	.foot_outBox_mid_text { display :flex; }
+	
+	
+	#foot_bot_allBox { display: block; }
+	
+	
+	
+	.foot_outBox_right { justify-content: space-between; }
+	.foot_inBox_logo { width : 150px; }
+	
+	
+} /* @media screen and (max-width : 1020px) */
+
+
+
+
+
+
+/*--------------------------미디어 쿼리 830px-------------------------*/
+@media screen and (max-width : 830px) {
+	.foot_blank_1920 { display : none; }
+	.foot_blank_830 { display : inline; }
+	
+}/*@media screen and (max-width : 830px) */
+
+
+
+
+
+/*--------------------------미디어 쿼리 740px-------------------------*/
+@media screen and (max-width : 740px) {
+	.foot_service_texts { font-size : .6rem;}
+	.foot_blank_1600 { display : none; }
+	.foot_blank_830 { display : none; }
+	.foot_service_texts_bold { font-size : .65rem; }
+	
+	.foot_import_texts { font-size : .7rem;}
+	
+	.foot_info_top_p1 { width : 160px; }
+	.foot_info_p { font-size : .6rem; }
+	
+	
+	
+	.foot_inBox_logo { width : 120px; }
+}/*@media screen and (max-width : 740px)*/
+
+
+
+
+
+
+
+/*--------------------------미디어 쿼리 620px-------------------------*/ 
+@media screen and (max-width : 620px) { 
+	#foot_outBox_text { display : block; justify-content: space-between; align-items:flex-start; }
+	
+	.foot_outBox_top_text { }
+	.foot_outBox_mid_text { }
+	.foot_outBox_bot_text { }
+	
+}/*@media screen and (max-width : 620px)*/
+
+
+
+
+
+
+/*--------------------------미디어 쿼리 580px-------------------------*/    
+@media screen and (max-width : 580px) {
+	.foot_import_textBox { justify-content: space-between; }
+	.foot_import_texts:last-child { margin-right :0; }
+	
+	
+	.foot_outBox_mid_text { display : block; }
+	
+	
+	.foot_outBox_right { margin-top : 5px; }
+} /*end @media screen and (max-width : 580px)*/
+
+
+
+
+
+/*--------------------------미디어 쿼리 540px-------------------------*/    
+@media screen and (max-width : 540px) {
+	.foot_import_texts { margin-right :0; }
+}/*@media screen and (max-width : 540px)*/
+
+	
+	
+	
+	
+	
+	
+/*--------------------------미디어 쿼리 400px-------------------------*/
+@media screen and (max-width : 400px) {
+	.foot_outBox_bot_text { display :block; }
+} /*end @media screen and (max-width : 400px)*/
+	
+
+
+
+
+
+
+
+/*--------------------------미디어 쿼리 385px-------------------------*/
+@media screen and (max-width : 385px) { 
+	.foot_inBox_logo { display : none; }
+} /*end @media screen and (max-width : 385px)*/
+
+
+
+
+
+
+

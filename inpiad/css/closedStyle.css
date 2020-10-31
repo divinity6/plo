@@ -1,0 +1,160 @@
+@charset "urf-8";
+
+/* Animate 애니메이션*/
+@import url(animate.css);
+
+/* Awesome Font*/
+@import url('fontawesome/css/all.css');
+
+/* 구글 노토산스 폰트 임포트*/
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+
+* {box-sizing : border-box;}
+
+/*바디 노토산스 폰트*/
+body { margin : 0; font-family: 'Noto Sans KR', sans-serif; }
+
+ul { list-style : none; padding : 0; margin : 0; }
+
+
+
+
+/*--------------------------section A-------------------------*/
+#secA { width : 60%; margin : auto; margin-top : 150px; margin-bottom : 100px; }
+
+#top_topic { position : fixed; top : 50px; left : 0%; background :#BFBFBF; width : 100%;
+	padding-left : 10%;
+	margin : 0; line-height: 50px; font-size : 1rem; color : white; }
+.top_topic_p { margin : 0;}
+
+
+
+#secA_ctn { margin : 80px auto 0; width : 55%; }
+.secA_topic { margin :0; font-size : 2.2rem; text-align: center; color : #2D2D2D; }
+.secA_light_topic { margin : 15px auto; font-size : 1rem; color : #7A7A7A;}
+#secA_line { margin-top : 20px;
+	border-bottom : 1px solid #686868; width : 100%; height: 2px;}
+.secA_callNum { margin :0; margin : 10px 0;
+	text-align: right; font-size : 1rem; color : #707070;}
+
+
+#secA_contents_box { border : 2px solid #686868; height : 800px;
+	width : 55%; margin : 30px auto; padding : 25px; overflow: scroll; }
+
+.secA_contents_texts { font-size : .8rem; color : #727272; font-weight: 200; }
+
+
+
+
+
+
+/*--------------------------미디어 쿼리 1760px-------------------------*/
+@media screen and (max-width : 1760px) {
+	.secA_topic { font-size : 2rem;}
+	.secA_light_topic { font-size : .9rem;}
+	#secA_contents_box { height : 750px; }
+}
+
+
+/*--------------------------미디어 쿼리 1600px-------------------------*/
+@media screen and (max-width : 1600px) {
+	#secA_ctn { width : 70%; }
+	#secA_contents_box { width : 70%; }
+} /*end @media screen and (max-width : 1600px)*/
+
+
+
+
+
+/*--------------------------미디어 쿼리 1260px-------------------------*/
+@media screen and (max-width : 1260px) {
+	#secA_ctn { width : 80%; }
+	#secA_contents_box { width : 80%; }
+	
+
+}
+
+/*--------------------------미디어 쿼리 1100px-------------------------*/
+@media screen and (max-width : 1100px) {
+	#secA_ctn { width : 90%; }
+	#secA_contents_box { width : 90%; }
+
+
+}
+
+
+/*--------------------------미디어 쿼리 980px-------------------------*/
+@media screen and (max-width : 980px) {
+	.secA_topic { font-size : 1.8rem; }
+	.secA_light_topic { font-size : .8rem; }
+	.secA_contents_texts { font-size : .7rem; }
+	
+} /*end @media screen and (max-width : 980px)*/
+
+
+
+/*--------------------------미디어 쿼리 880px-------------------------*/
+@media screen and (max-width : 880px) {
+	#secA { width : 70%;}
+	
+}
+
+
+
+
+/*--------------------------미디어 쿼리 750px-------------------------*/
+@media screen and (max-width : 750px) { 
+	#secA { width : 80%;}
+
+
+} 
+
+
+/*--------------------------미디어 쿼리 660px-------------------------*/
+@media screen and (max-width : 660px) { 
+	#top_topic { font-size: .9rem; }
+	.secA_topic { font-size : 1.5rem; }
+	.secA_light_topic { font-size : .75rem; }
+	.secA_contents_texts { font-size : .6rem; }
+
+} /*end @media screen and (max-width : 660px)*/
+
+
+/*--------------------------미디어 쿼리 550px-------------------------*/
+@media screen and (max-width : 550px) { 
+	#secA { width : 90%;}
+}
+
+
+/*--------------------------미디어 쿼리 490px-------------------------*/
+@media screen and (max-width : 490px) { 
+	
+	#top_topic { font-size: .9rem; }
+	.secA_topic { font-size : 1.25rem; }
+	.secA_light_topic { font-size : .7rem; }
+	#secA_contents_box { padding : 15px; height : 500px;}
+	.secA_contents_texts { font-size : .6rem; }
+}
+
+/*--------------------------미디어 쿼리 430px-------------------------*/
+@media screen and (max-width : 430px) { 
+	#top_topic { font-size: .9rem; }
+	.secA_topic { font-size : 1.1rem; }
+	#secA_contents_box { padding : 10px; height : 400px;}
+	.secA_light_topic { font-size : .7rem; margin : 5px 0; }
+}
+
+/*--------------------------미디어 쿼리 395px-------------------------*/
+@media screen and (max-width : 395px) { 
+	#top_topic { font-size: .8rem; }
+	.secA_topic { font-size : 1.05rem; }
+}
+
+
+
+/*--------------------------미디어 쿼리 360px-------------------------*/
+@media screen and (max-width : 360px) { 
+	#top_topic { font-size: .7rem; }
+	.secA_topic { font-size : 1rem; }
+}
+
