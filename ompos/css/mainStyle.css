@@ -1,0 +1,391 @@
+@charset "urf-8";
+
+/* Animate 애니메이션*/
+@import url(animate.css);
+
+/* Awesome Font*/
+@import url('fontawesome/css/all.css');
+
+/*font-family: 'Noto Sans KR', sans-serif;*/
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700&display=swap');
+
+* {box-sizing : border-box;}
+body {margin : 0; font-family: 'Noto Sans KR', sans-serif;}
+
+
+/*-----------------우측 사이드바---------------*/
+
+#sideBar { 
+	position : fixed; top :0; right : -300px; width : 300px; height : 100vh;
+	transition : 1s;
+	
+	background : #385575;
+}
+
+
+#closeBox {
+	border-radius: 50%;
+	
+	cursor : pointer;
+	color : #385575;
+	margin-left : 250px; margin-top : 20px;
+	text-align: center;
+	width : 25px; line-height: 25px;
+	font-size : 1em; background : #5884A5;}
+
+
+.topicNav { margin : 0; margin-left : 30px; margin-top : 20px;
+	font-weight: bold;
+	font-size : 1.5em; color : #A2D0EA;}
+
+.navMenu{ list-style : none; padding : 0; margin : 0; margin-left :40px; margin-bottom : 50px; margin-top : 10px;}
+#navMenu2 {
+	width : 160px; margin-top : 0;
+	display : flex; justify-content: space-between; align-items : center;}
+
+.navList { color : #73A8C6; margin : 0;padding-top :10px; padding-bottom : 10px; margin-right : 30px; font-size : 1.1em; cursor : pointer; font-weight : normal; transition : .5s;}
+.iconNav1 { margin-right : 8px; padding-left : 8px;}
+.navList2 { font-size : 2.5em; margin:0; padding : 0; cursor : pointer; color :  #73A8C6; transition : .5s;}
+
+
+
+#container { width : 100%; transition : 1s;}
+/*상단 고정 네비게이션*/
+#topNav {
+	position : fixed; top : 0; left : 0; width : 100%;
+	transition : 1s; font-size : 1.8em; color : white;
+	
+	z-index: 99;
+	display : flex; justify-content: space-between; align-items : center;
+
+}
+
+.topNav1 {background : none;}
+.topNav2 { background : #1B2935;}
+#logoBox {margin : 30px;  font-family: 'Mukta', sans-serif; font-weight: 800; transition : 1s;}
+#viewBox { margin : 50px; cursor : pointer;}
+
+/*----------------------------------------------------sectionA------------------------------------*/
+#secA {
+	font-family: 'Mukta', sans-serif;
+	position : relative;
+	height : 100vh; 
+	background-image : url(../images/back1.png);
+	background-size : cover;
+	background-position: center;
+	
+}
+
+#ctnA { position : absolute; top : 50%; left : 15%; transform : translate(-15%,-50%); transition : 1s;}
+
+
+#secA h1 { color : white; font-size : 3.2em; margin : 0;}
+
+#ctnA p { color : #B7B7B7; margin : 0; font-size : 1.4em; text-align: center;}
+
+#downA { color : white; position : absolute; bottom : 10%; left :50%; 
+	font-size : 2.5em; cursor : pointer; transform:translateX(-50%);
+	transition : 1s;}
+
+#ctnA2 { position : absolute; bottom : 29%; left: 17%; transform : translate(-17%,-29%);
+	font-family: 'Noto Sans KR', sans-serif; font-size : .9em; text-align: left; color : #8E8E8E;
+	margin :0; transition : 1s;}
+
+
+
+
+/*----------------------------------------------------sectionB------------------------------------*/
+#secB { max-width : 1280px; width : 100%; margin: auto; margin-top :80px; }
+
+.outBoxB1 { display : flex; justify-content: space-between; align-items: center;margin-bottom : 50px; }
+
+.mainH2 { margin : 0; color : #1B2935;}
+.mainP {margin : 0; margin-top : 3px; color : #5884A5; font-size : .8em;}
+.btnR { border : 2px solid #1B2935; cursor :pointer; transition : .5s;
+	background : none; outline : none; font-size : 1.2em; padding : 10px 20px;}
+
+.btnR:hover { border : 1px solid transparent; background : #1B2935; color : white;}
+
+
+
+
+
+
+
+
+
+#outBoxB2 { display : flex; justify-content: space-between; align-items: center; flex-wrap: wrap;
+	list-style : none; padding : 0; margin : 0;}
+
+.inBoxB2 { width : calc(33% - 10px); margin-bottom : 20px; overflow : hidden; }
+.inBoxImg { position : relative;}
+.imgB { width : 100%; display : block; height: 100%; transition : .5s;}
+
+.blankB { position : absolute; top :0; left :0; width :100%; height: 100%; background : #5884A5; opacity : 0; transition : .5s;}
+
+.btnB{ border: 2px solid white; cursor : pointer;
+	background : none; color : white; padding : 10px 18px;
+	font-size :1.1em; opacity : 0; transition : .5s;
+	
+	position :absolute; top : 50%; left : 50%; transform : translate(-50%,-50%);}
+
+
+.inBoxImg:hover .imgB { transform : scale(1.4);}
+.inBoxImg:hover .blankB { opacity : .6;}
+.inBoxImg:hover .btnB { opacity : 1;}
+.btnB:hover { background : white; color : #1B2935;}
+
+
+
+
+/*----------------------------------------------------------------secC--------------------------------*/
+#secC { width :100%; 
+    background-image : url(../images/secCimg.jpg);
+    background-size : cover;
+    background-repeat : no-repeat;
+    background-position : center;
+    background-attachment: fixed;
+    }
+
+#blankC { background : rgba(38,55,75,.5); }
+
+#secCtrC {max-width : 1280px; width : 100%;margin: auto; margin-top :80px; text-align : center;}
+
+.ctnC { padding-top :80px; }
+#ctnCh2 { color : white;}
+#ctnCp { color : #CECECE;}
+
+#outBoxC { 
+    list-style: none; padding :0; margin : 0; margin-top : 50px;
+    display : flex; justify-content: space-between; align-items : center;
+    flex-wrap :wrap;
+}
+
+.inBoxC { width : calc(33% - 30px);padding-bottom : 80px;}
+
+.iconC { font-size : 3em; color : white;}
+.inBoxC h3 { color : #CECECE; }
+.inBoxC p {color : #ADADAD; font-size : .9em;}
+
+
+
+
+
+
+
+
+
+/*----------------------------------------------------------------secD--------------------------------*/
+
+
+#secD {background-color : #E8E8E8;}
+
+#CtrD {max-width : 1280px; width : 100%;margin: auto; padding :80px 0;}
+
+#outBoxD { list-style : none; padding : 0; margin : 0;
+    display : flex; justify-content: space-between; align-items : center;
+    flex-wrap :wrap; }
+
+.inBoxD { width : calc(33% - 10px); margin-bottom : 10px;}
+
+.imgBoxD { margin-bottom : 20px;}
+.imgD { width : 100%; display : block;}
+.ctnD h2 {margin : 0; color : #233D4C; cursor : pointer;}
+.ctnD i {font-size : .9em; color : #385B6D;}
+.ctnD p {color : #3B6072; font-size : .8em;}
+.btnD { margin : 0; padding-left : 0; font-size : 1em;
+    border : none; background : none; color : #0E648E; 
+    cursor : pointer; font-weight: bold; outline : none;}
+
+
+
+/*-------------------------------------------secE----------------------------------*/
+#secE { width :100%; height: 400px;
+	position : relative;
+	overflow: hidden; }
+
+#secEvideo { position : absolute; z-index: 10; width:100%; padding-bottom:200px;}
+
+#secE>#ctnE { position : absolute; top :50%; left : 50%; transform : translate(-50%,-50%);
+	padding : 80px 0; margin : auto; width : 100%; max-width : 1200px; z-index: 30;}
+
+#secE>#ctnE>#ctnEp { color : white; text-align: center; font-size : 2em; }
+
+#secE>#ctnE>#btnBoxE { margin : auto; text-align: center; }
+
+#secE>#ctnE>#btnBoxE>#btnE { border : 2px solid white;
+	text-align: center; cursor : pointer; background : none; color : white; font-size : 1.2em;
+	padding : 10px 20px; margin-top :20px; outline : none; transition :.5s;
+}
+#secE>#ctnE>#btnBoxE>#btnE:hover { background : white; color : #233D4C;}
+
+
+
+
+
+
+
+
+/*-------------------------------------------secF----------------------------------*/
+#secF { width : 100%; max-width : 1280px; margin: auto; padding :80px 0;}
+
+#secF>#outBoxF { margin-top : 60px;
+	display : flex; justify-content: space-between; align-items : center; flex-wrap :wrap; }
+
+#secF>#outBoxF>.inBoxF { width : calc(33% - 40px); margin-right : 40px; }
+
+#secF>#outBoxF>.inBoxF>.imgF { width : 50%; display : block; margin : auto; }
+
+#secF>#outBoxF>.inBoxF>.ctnF { text-align: center; }
+
+#secF>#outBoxF>.inBoxF>.ctnF>.ctnFp1 { color : #3B6072; font-size : .8em; margin : 15px 0 20px;}
+
+#secF>#outBoxF>.inBoxF>.ctnF>h4 { margin : 0; color : #233D4C;}
+
+#secF>#outBoxF>.inBoxF>.ctnF>.ctnFp2 { margin : 1px 0; font-size : .7em; color : #0E648E;}
+
+
+/*-------------------------------------secG-------------------------------------------------*/
+
+
+#secG { width : 100%;
+	background-image : url(../images/callingPad.png);
+	background-repeat : no-repeat;
+	background-size : cover;
+	background-position: center;
+
+}
+#secG>#alignG { background : rgba(0,0,0,.5); width : 100%;}
+#secG>#alignG>#secCtrG { width : 100%; max-width: 1280px; margin : auto; padding-bottom : 60px;}
+
+#secG>#alignG>#secCtrG>#mainGh2 {text-align: center; padding-top : 80px; color : white;}
+#secG>#alignG>#secCtrG>#mainGp {text-align: center; color : #CECECE; margin-bottom : 40px; }
+
+#secG>#alignG>#secCtrG>#formG { text-align: center; margin : auto;  color : white; }
+
+#secG>#alignG>#secCtrG>#formG>.formG1 { display : block; margin : auto; color:#fff;
+	font-size : 1em; padding : 10px 20px;width : 40%; margin-bottom : 15px;
+	background : none; outline : none; border : 1px solid white; border-radius: 10px;
+}
+
+#secG>#alignG>#secCtrG>#formG>.formG2 { margin : auto; padding-bottom : 60px;}
+
+#secG>#alignG>#secCtrG>#btnBoxG { text-align: center;}
+#secG>#alignG>#secCtrG>#btnBoxG>#btnG { border : 2px solid white;
+	background : none; color : white; font-size : 1em; padding: 8px 16px;
+	margin-top : 20px; outline : none; cursor : pointer; transition : .5s;}
+
+#secG>#alignG>#secCtrG>#btnBoxG>#btnG:hover { background : white; color : #444444; }
+
+
+
+/*-------------------------------------footer-----------------------------------------------*/
+
+#foot{ width : 100%; background : #444444;}
+
+#foot>#outFoot { width : 100%; max-width: 1280px; display : flex; justify-content: space-between; align-items : center; margin : auto; text-align : center;}
+
+#foot>#outFoot>.inFoot { padding : 30px 0; color : white; }
+
+
+
+
+
+
+
+/*-------------------------------------------------모달 창--------------------------*/
+		#modal { position : fixed; top :0; left:0; width : 100%; height : 100vh; animation : fadeIn;
+			display : none; justify-content: center; align-items: center; background : rgba(0,0,0,.5);
+			z-index: 99;
+		}
+		
+		#modalContents { background-color : #fff; padding : 25px; border-radius: 10px;
+			position : relative; box-shadow: 5px 5px 20px; animation : zoomIn .5s; width : 50%;}
+		
+		
+		@keyframes zoomIn { from { transform : scale(0); opacity : 0; } to { transform : scale(1); opacity : 1; } }
+	
+		#modalImage { border-radius: 10px; width : 100%; }
+	
+
+
+
+
+
+
+
+
+
+
+/*-------------------------------------미디어쿼리 태블릿-----------------------------------------------*/
+@media screen and (max-width : 1280px) {
+	#secB,#secCtrC ,#CtrD ,#secF, #secCtrG { width : 100%; max-width : 900px;}
+	#secG>#alignG>#secCtrG>#formG>.formG1 {width : 70%;}
+	#foot>#outFoot {width:90%; margin:auto;}
+	
+	#ctnA { bottom : 100%; left : 10%; }
+	#secA h1 { color : white; font-size : 2.2em;}
+	#ctnA p { color : #B7B7B7; margin : 0; font-size : 1.1em;}
+	#downA {  bottom : 10%; left :50%; font-size : 2.5em; }
+	#ctnA2 {  bottom : 30%; left: 11%;
+ font-size : .65em; text-align: left; margin :0;}
+}
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width : 800px) {
+	#secB,#secCtrC ,#CtrD ,#secF, #secCtrG { width : 95%; max-width : 700px; margin:auto;}
+	.inBoxB2 { width : 100%; }
+	
+	.inBoxC { width : 100%;} 
+	.inBoxC p {width:50%; margin:auto;}
+	
+	#secE>#ctnE { max-width: 700px; top:45%;}
+	#secE>#ctnE>#ctnEp { font-size : 1em; padding : 20px 0;}
+
+	#secE>#ctnE>#btnBoxE { margin : auto; text-align: center; }
+
+	#secE>#ctnE>#btnBoxE>#btnE { font-size : .8em; margin-top :0px;}
+	
+	#secFh2 { text-align: center;}
+	#secFp { text-align: center;}
+	#secF>#outBoxF>.inBoxF { width : 100%; margin-right : 0; }
+	#secF>#outBoxF>.inBoxF>.imgF { width : 30%; margin-top : 70px;}
+	#secF>#outBoxF>.inBoxF>.ctnF>.ctnFp1 {width:50%; margin: 15px auto 20px;}
+	#secG>#alignG>#secCtrG>#formG>.formG1 {width : 90%;}
+	.inBoxD { width : 100%; margin-bottom : 10px;}
+	
+	#ctnA2 {display : none;}
+	#ctnA { display:none; }
+	
+	#secA h1 { color : white; font-size : 2.2em;}
+}
+
+
+
+@media screen and (max-width : 500px) {
+	#secE>#ctnE { max-width: 400px; top : 35%;}
+	#secB,#secCtrC ,#CtrD ,#secF, #secCtrG { width : 95%; margin:auto; max-width : 400px;}
+	#logoBox { font-size:1.5rem;}
+	#secA h1 { color : white; font-size : 2.2em;}
+
+	#secB {margin-top: 50px;}
+	.mainP {margin-top:-5px;}
+	.btnR {font-size:.8rem; padding: 5px 10px}
+	.inBoxC p {width:80%;}
+
+	#secE {display: none;}
+	#secF>#outBoxF {margin-top:20px;}
+	#secF>#outBoxF>.inBoxF {margin-top :60px;}
+	#secF>#outBoxF>.inBoxF>.imgF {margin-top:0px;}
+	#secF>#outBoxF>.inBoxF>.ctnF>.ctnFp1 {width:80%;}
+	#foot>#outFoot {font-size:.7rem;}
+	#foot>#outFoot>.inFoot:last-child {font-weight:300;}
+}
