@@ -1,0 +1,121 @@
+@charset "urf-8";
+
+/*----------------------SFfont--------------------------*/
+/*Black*/
+@font-face {
+    font-family : SF-Pro-Display-Black;
+    src : url('../font/SFpro/SFpro_eot/SF-Pro-Display-Black.eot') format('embedded-opentype'),
+    /*url('../font/SFpro/SFpro_woff2/SF-Pro-Display-Black.woff2') format('woff2'),*/
+    url('../font/SFpro/SFpro_woff/SF-Pro-Display-Black.woff') format('woff'),
+    url('../font/SFpro/SFpro_ttf/SF-Pro-Display-Black.ttf') format('truetype');
+    
+    font-weight: normal; font-style: normal;
+}
+
+/*Heavy*/
+@font-face {
+    font-family : SF-Pro-Display-Heavy;
+    src : url('../font/SFpro/SFpro_eot/SF-Pro-Display-Heavy.eot') format('embedded-opentype'),
+    /*url('../font/SFpro/SFpro_woff2/SF-Pro-Display-Black.woff2') format('woff2'),*/
+    url('../font/SFpro/SFpro_woff/SF-Pro-Display-Heavy.woff') format('woff'),
+    url('../font/SFpro/SFpro_ttf/SF-Pro-Display-Heavy.ttf') format('truetype');
+    
+} 
+
+/*Bold*/
+@font-face {
+    font-family : SF-Pro-Display-Bold;
+    src : url('../font/SFpro/SFpro_eot/SF-Pro-Display-Bold.eot') format('embedded-opentype'),
+    /*url('../font/SFpro/SFpro_woff2/SF-Pro-Display-Black.woff2') format('woff2'),*/
+    url('../font/SFpro/SFpro_woff/SF-Pro-Display-Bold.woff') format('woff'),
+    url('../font/SFpro/SFpro_ttf/SF-Pro-Display-Bold.ttf') format('truetype');
+    
+} 
+
+
+/*Semibold*/
+@font-face {
+    font-family : SF-Pro-Display-Semibold;
+    src : url('../font/SFpro/SFpro_eot/SF-Pro-Display-Semibold.eot') format('embedded-opentype'),
+    /*url('../font/SFpro/SFpro_woff2/SF-Pro-Display-Black.woff2') format('woff2'),*/
+    url('../font/SFpro/SFpro_woff/SF-Pro-Display-Semibold.woff') format('woff'),
+    url('../font/SFpro/SFpro_ttf/SF-Pro-Display-Semibold.ttf') format('truetype');
+    
+}
+
+/*Medium*/
+@font-face {
+    font-family : SF-Pro-Display-Medium;
+    src : url('../font/SFpro/SFpro_eot/SF-Pro-Display-Medium.eot') format('embedded-opentype'),
+    /*url('../font/SFpro/SFpro_woff2/SF-Pro-Display-Black.woff2') format('woff2'),*/
+    url('../font/SFpro/SFpro_woff/SF-Pro-Display-Medium.woff') format('woff'),
+    url('../font/SFpro/SFpro_ttf/SF-Pro-Display-Medium.ttf') format('truetype');
+    
+}
+
+/*Regular*/
+@font-face {
+    font-family : SF-Pro-Display-Regular;
+    src : url('../font/SFpro/SFpro_eot/SF-Pro-Display-Regular.eot') format('embedded-opentype'),
+    /*url('../font/SFpro/SFpro_woff2/SF-Pro-Display-Black.woff2') format('woff2'),*/
+    url('../font/SFpro/SFpro_woff/SF-Pro-Display-Regular.woff') format('woff'),
+    url('../font/SFpro/SFpro_ttf/SF-Pro-Display-Regular.ttf') format('truetype');
+    
+}
+
+/*Light*/
+@font-face {
+    font-family : SF-Pro-Display-Light;
+    src : url('../font/SFpro/SFpro_eot/SF-Pro-Display-Light.eot') format('embedded-opentype'),
+    /*url('../font/SFpro/SFpro_woff2/SF-Pro-Display-Black.woff2') format('woff2'),*/
+    url('../font/SFpro/SFpro_woff/SF-Pro-Display-Light.woff') format('woff'),
+    url('../font/SFpro/SFpro_ttf/SF-Pro-Display-Light.ttf') format('truetype');
+    
+}
+
+/*Thin*/
+@font-face {
+    font-family : SF-Pro-Display-Thin;
+    src : url('../font/SFpro/SFpro_eot/SF-Pro-Display-Thin.eot') format('embedded-opentype'),
+    /*url('../font/SFpro/SFpro_woff2/SF-Pro-Display-Black.woff2') format('woff2'),*/
+    url('../font/SFpro/SFpro_woff/SF-Pro-Display-Thin.woff') format('woff'),
+    url('../font/SFpro/SFpro_ttf/SF-Pro-Display-Thin.ttf') format('truetype');
+    
+}
+
+/*Ultralight*/
+@font-face {
+    font-family : SF-Pro-Display-Ultralight;
+    src : url('../font/SFpro/SFpro_eot/SF-Pro-Display-Ultralight.eot') format('embedded-opentype'),
+    /*url('../font/SFpro/SFpro_woff2/SF-Pro-Display-Black.woff2') format('woff2'),*/
+    url('../font/SFpro/SFpro_woff/SF-Pro-Display-Ultralight.woff') format('woff'),
+    url('../font/SFpro/SFpro_ttf/SF-Pro-Display-Ultralight.ttf') format('truetype');
+    
+}
+
+
+
+/*font-size*/
+.sf_black { font-family : SF-Pro-Display-Black, sans-serif; }
+.sf_heavy { font-family : SF-Pro-Display-Heavy, sans-serif; }
+.sf_bold { font-family : SF-Pro-Display-Bold, sans-serif; }
+.sf_semibold { font-family : SF-Pro-Display-Semibold, sans-serif; }
+.sf_medium { font-family : SF-Pro-Display-Medium, sans-serif; }
+.sf_regular { font-family : SF-Pro-Display-Regular, sans-serif; }
+.sf_light { font-family : SF-Pro-Display-Light, sans-serif; }
+.sf_thin { font-family : SF-Pro-Display-Thin, sans-serif; }
+.sf_ultralight { font-family : SF-Pro-Display-Ultralight, sans-serif; }
+
+
+
+
+
+
+
+
+
+
+
+
+
+

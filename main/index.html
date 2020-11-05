@@ -1,0 +1,618 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="format-detection" content="telephone=no" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta name="author" content="Jeon">
+	<title>전세훈 | 포트폴리오</title>
+
+    <link href = "css/swiper-bundle.css" rel = "stylesheet" />
+    <link href = "css/jquery.fullPage.css" rel = "stylesheet" />
+    <link href = "images/public/pavi.ico" rel = "shortcut icon" />
+    <link href = "css/hanSans.css" rel = "stylesheet"/>
+    <link href = "css/metropolice.css" rel = "stylesheet" />
+    <link href = "css/main.css" rel = "stylesheet"/>
+
+    <script src = "js/jquery-3.5.1.min.js"></script>
+    <script src = "js/jquery.fullPage.js"></script>
+    <script src = "js/jquery.fullpage.extensions.min.js"></script>
+    <script src = "js/main.js"></script>
+    
+</head>
+
+<body>
+    <!--1024 hidden-->
+    <div id = "ctrl_wrap">
+        <div class = "deco_line deco_line_white"></div>
+        <ul class = "ctrl_menu ctrl_menu_white mp_bold">
+            <li class = "ctrl_list ctrl_list1 ctrl_list1_white ctrl_list_first">INTRO</li>
+            <li class = "ctrl_list ctrl_list1 ctrl_list1_white">ABOUT</li>
+            <li class = "ctrl_list ctrl_list1 ctrl_list1_white">INFO</li>
+            <li class = "ctrl_list ctrl_list1 ctrl_list1_white">WORKS</li>
+            <li class = "ctrl_list ctrl_list1 ctrl_list1_white">CONTACT</li>
+        </ul>
+        <div class = "deco_line deco_line_white"></div>
+    </div>
+    <div id ="hd_wrap" class= "hd_wrap1">
+        <header id = "head">
+            <img src = "images/public/js_logo.svg" alt = "전세훈 로고" class = "img logoImg" />                
+            <nav id ="navi">
+                <ul id ="menu">
+                    <li class ="list list1 mp_bold">INTRO</li>
+                    <li class ="list list1 mp_bold">ABOUT</li>
+                    <li class ="list list1 mp_bold">INFO</li>
+                    <li class ="list list1 mp_bold">WORKS</li>
+                    <li class ="list list1 mp_bold">CONTACT</li>
+                </ul>
+            </nav>
+            <div class = "musicOn">
+                <svg version="1.1" class = "musicPlay" 
+                x="0px" y="0px" viewBox="0 0 42 42" 
+                style="enable-background:new 0 0 42 42;" xml:space="preserve">
+                <g>
+                    <path class="musicPlay_path musicPlay_white" d="M18.4,38.6v-3.9c-8.3-0.4-14.7-7.4-14.3-15.6c0.4-8.3,7.4-14.7,15.6-14.3c5.2,0.2,10,3.2,12.5,7.8h4.3
+                        c-4-9.7-15-14.3-24.7-10.3S-2.5,17.3,1.5,27C4.4,33.8,11,38.3,18.4,38.6z"/>
+                    <path class="musicPlay_path musicPlay_white" d="M32.7,21.6v5.9h-3.6c-3.8,0-6.8,3.1-6.8,6.8s3.1,6.8,6.8,6.8c4,0,7.3-3.1,7.5-7.2l0,0V21.6
+                        c0-0.4,0.3-0.7,0.7-0.7h4.6V17h-4.6C34.8,17.1,32.7,19.1,32.7,21.6z M29.1,37.3c-1.6,0-2.9-1.3-2.9-2.9s1.3-2.9,2.9-2.9h3.6v2.3
+                        C32.7,35.7,31.1,37.3,29.1,37.3z"/>
+                    <path class="musicPlay_path musicPlay_white" d="M12.5,19.7c0,3.6,2.9,6.5,6.5,6.5s6.5-2.9,6.5-6.5s-2.9-6.5-6.5-6.5S12.5,16.1,12.5,19.7z M21.7,19.7
+                        c0,1.4-1.2,2.6-2.6,2.6s-2.6-1.2-2.6-2.6s1.2-2.6,2.6-2.6S21.7,18.3,21.7,19.7z"/>
+                </g>
+                </svg>
+            </div>
+            
+            <div id = "musicOff" class = "musicOff_white">
+                <i class="fas fa-stop musicStop"></i>
+            </div>
+            
+            <div id = "view_wrap">
+                <div id = "view" class ="view1">
+                    <div class ="view_line view_line1 view_white" id = "view_line1"></div>
+                    <div class = "view_line view_line2 view_white" id ="view_line2"></div>
+                    <div id = "view_box" class = "view_box1 view_white"></div>
+                </div>
+            </div>
+        </header>
+    </div>
+    <div id = "wrap">
+        <div id = "intro_wrap" class = "section active">
+            <section id = "intro">
+                <div id = "mainsd_wrap">  
+                    <div class = "swiper-container siwper-intro">
+                        <div id = "mainsd">
+                            <div class = "sd_ctn">
+                                <p class = "sd_note1 mp_semiBold" id = "sd_note">UX/UI WEB PUBLISHER</p>
+                                <h2 class = "mp_black sd_title1" id = "sd_title">PORTFOLIO</h2>
+                                <p class = "sd_ment1 sq_regular" id = "sd_ment">신입 웹퍼블리셔 전세훈의 개인 포트폴리오 사이트입니다.</p>
+                                <button class = "sd_btn sq_regular">포트폴리오 보러가기</button>
+                            </div>
+                            <div class = "rectBox mp_black">
+                                <div class = "rect rect_black rect_pos1"></div>
+                                <div class = "rect rect_bold rect_pos2"></div>
+                                <div class = "rect rect_medium rect_pos3"></div>
+                                <div class = "rect rect_semimedium rect_pos4"></div>
+                                <div class = "rect rect_regular rect_pos5"></div>
+                                <div class = "rect rect_light rect_pos6"></div>
+                                <div class = "rect rect_thin rect_pos7"></div>
+                            </div>
+
+                            <div id = "sd_dragBox">
+                                <!--drag패스-->
+                                <svg version="1.1" id="sd_drag" viewBox="0 0 42 43.8" 
+                                style="enable-background:new 0 0 42 43.8;" >
+                                <g>
+                                    <path class="sd_drag_path sd_drag_path1" d="M41.7,31c0-2.1-1.8-3.9-3.9-3.9c-0.8,0-1.4,0.2-2,0.5c-0.6-1.3-2-2.2-3.5-2.2c-0.8,0-1.4,0.2-2,0.5
+                                        c-0.6-1.3-2-2.2-3.5-2.2c-0.6,0-1.1,0.1-1.6,0.4V16c0-1-0.4-2-1.1-2.8c-0.8-0.8-1.7-1.1-2.7-1.1l0,0c-2.1,0-3.9,1.8-3.9,3.9v18.4
+                                        l-2.2-2.3c-1.3-1.3-3.4-1.5-5-0.5c-0.9,0.6-1.6,1.6-1.7,2.7c-0.2,1.1,0.2,2.2,0.9,3.1l4.2,5c0.2,0.3,0.5,0.4,0.9,0.4
+                                        c0.3,0,0.5-0.1,0.8-0.3c0.5-0.4,0.5-1.1,0.2-1.6l-4.2-5c-0.3-0.4-0.4-0.8-0.4-1.3c0.1-0.5,0.3-0.9,0.7-1.1c0.6-0.4,1.6-0.4,2.1,0.2
+                                        l3.1,3c0.5,0.5,1.3,0.6,1.9,0.4c0.6-0.3,1.1-0.9,1.1-1.7V16c0-0.9,0.8-1.6,1.6-1.6l0,0c0.4,0,0.9,0.2,1.1,0.5
+                                        c0.3,0.3,0.5,0.7,0.5,1.1v13.5c0,0.6,0.5,1.1,1.1,1.1c0.6,0,1.1-0.5,1.1-1.1v-1.8c0-0.9,0.8-1.6,1.6-1.6c0.9,0,1.6,0.8,1.6,1.6v3.5
+                                        c0,0.6,0.5,1.1,1.1,1.1c0.6,0,1.1-0.5,1.1-1.1v-1.8c0-0.9,0.8-1.6,1.6-1.6s1.6,0.8,1.6,1.6v3.5c0,0.6,0.5,1.1,1.1,1.1
+                                        c0.6,0,1.1-0.5,1.1-1.1v-1.7c0-0.1,0-0.1,0-0.1c0-0.9,0.7-1.6,1.6-1.6s1.6,0.7,1.6,1.6v10.9c0,0.6,0.5,1.1,1.1,1.1
+                                        c0.6,0,1.1-0.5,1.1-1.1L41.7,31z"/>
+                                    <path class="sd_drag_path sd_drag_path1" d="M0.6,6.5L0.6,6.5C0.3,6.8,0.2,7.1,0.3,7.4c0,0.3,0.1,0.6,0.3,0.8L6,13.7c0.4,0.4,1.1,0.4,1.5,0l0.2-0.2
+                                        c0.4-0.4,0.4-1.1,0-1.5L4.3,8.6l7.7,0c0.6,0,1.1-0.5,1.1-1.1l0-0.3c0-0.6-0.5-1.1-1.1-1.1l-7.7,0l3.3-3.3c0.4-0.4,0.4-1.1,0-1.5
+                                        L7.5,1.1C7.1,0.7,6.4,0.7,6,1.1L0.6,6.5C0.6,6.5,0.6,6.5,0.6,6.5z"/>
+                                    <path class="sd_drag_path sd_drag_path1" d="M39.2,8.3L39.2,8.3c0.3-0.3,0.3-0.6,0.3-0.9c0-0.3-0.1-0.6-0.3-0.8l-5.4-5.4c-0.4-0.4-1.1-0.4-1.5,0l-0.2,0.2
+                                        c-0.4,0.4-0.4,1.1,0,1.5l3.4,3.4l-7.7,0c-0.6,0-1.1,0.5-1.1,1.1l0,0.3c0,0.6,0.5,1.1,1.1,1.1l7.7,0L32.1,12c-0.4,0.4-0.4,1.1,0,1.5
+                                        l0.2,0.2c0.4,0.4,1.1,0.4,1.5,0L39.2,8.3C39.2,8.3,39.2,8.3,39.2,8.3z"/>
+                                    <circle class="sd_drag_path sd_drag_path1" cx="20.3" cy="7.3" r="2.7"/>
+                                </g>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class = "swiper-wrapper">
+                            <div class = "swiper-slide" id = "intro_swip_sd1"></div>
+                            <div class = "swiper-slide" id = "intro_swip_sd2"></div>
+                            <div class = "swiper-slide" id = "intro_swip_sd3"></div>
+                            <div class = "swiper-slide" id = "intro_swip_sd4"></div>
+                        </div>
+                        <div class="swiper-button-next intro-next"></div>
+                        <div class="swiper-button-prev intro-prev"></div>
+                        <div class = "swiper-pagination swiepr-intro-pition"></div>
+                    </div>
+                </div>
+
+                <div id ="intro_botBox">
+                    <ul id = "intro_sns" class = "mp_bold">
+                        <li class ="intro_snsList snsFb">FACEBOOK</li>
+                        <li class ="intro_snsList snsYt">YOUTUBE</li>
+                        <li class ="intro_snsList snsGit">GITHUB</li>
+                        <li class ="intro_snsList snsEmail">EMAIL</li>
+                    </ul>
+
+                    <ul id ="intro_etc" class = "mp_light">
+                        <li class = "intro_etcList">Reactive WEB</li>
+                    </ul>
+
+                </div>
+            </section>
+        </div>
+
+        <div id ="about_wrap" class = "section">
+            <div id ="about_back_wrap">
+                <div id = "about_backBox">
+                    <div class ="about_back" id ="about_back1"></div>
+                    <div class ="about_back" id ="about_back2"></div>
+                    <div class ="about_back" id ="about_back3"></div>
+                </div>
+            </div>
+            <section id ="about">
+                <div class ="titleBox">
+                    <h4 class= "title about_tit mp_black">ABOUT</h4>
+                </div>
+
+                <div id = "about_ctnBox">
+                    <div class = "about_ctn">
+                        <div class ="about_topicBox">
+                            <div class ="about_rect"></div>
+                            <h2 class = "about_topic sq_regular">
+                                언제나&nbsp;<strong class = "sq_bold">끈기와 인내</strong>를 가지고 도전합니다
+                            </h2>
+                        </div>
+                        <div id = "about_chgBox_wrap">
+                            <div id = "about_chgBox">
+                                <div class ="about_chg" id ="about_chg1">
+                                    <p class ="about_sub sq_regular">무언가를 물어보기 전에 스스로 해결방안을 찾는 습관을 지니고 있습니다</p>
+                                    <p class ="about_texts sq_light">
+                                        목적에 부합 하면서도 사용성을 충족시키는 웹은 많은 고민과 조사를 통해 이루어진다고 
+                                        믿고 있습니다. 작은 개인 웹사이트부터 큰 쇼핑몰까지 하나하나의 고민과 이러한 노력이 
+                                        모여 이루어집니다. 항상 고민을 쉬지 않는 웹 퍼블리셔가 되려 노력하고 있습니다
+                                    </p>
+                                </div> 
+                                <div class ="about_chg" id ="about_chg2">
+                                    <div class = "about_keywords">
+                                            <!--before 박스-->
+                                            <p class = "about_pt sq_regular">기본에 충실</p>
+                                            <p class = "about_des sq_light">여러가지 기술 및 능력활용도 중 
+                                                기본기를 가장 중요하게 생각합니다</p>
+                                    </div>
+                                    <div class = "about_keywords">
+                                        <!--before 박스-->
+                                        <p class = "about_pt sq_regular">말라드</p>
+                                        <p class = "about_des sq_light">차분한 색상의 많은 생각과 고민을 통해
+                                            문제를 해결하는 저자신과 어울리는 색상입니다</p>
+                                    </div>
+                                    <div class = "about_keywords">
+                                        <!--before 박스-->
+                                        <p class = "about_pt sq_regular">수렴적 사고</p>
+                                        <p class = "about_des sq_light">현재 소속된 집단의 상황에 순응하지만, 
+                                            새로운 변화또한 적극 수용합니다</p>
+                                    </div>
+                                </div>
+                                <div class ="about_chg" id ="about_chg3">
+                                    <p class ="about_sub sq_regular">무언가를 물어보기 전에 스스로 해결방안을 찾는 습관을 지니고 있습니다.</p>
+                                    <p class ="about_texts sq_light">
+                                        목적에 부합 하면서도 사용성을 충족시키는 웹은 많은 고민과 조사를 통해 이루어진다고 
+                                        믿고 있습니다. 작은 개인 웹사이트부터 큰 쇼핑몰까지 하나하나의 고민과 이러한 노력이 
+                                        모여 이루어집니다. 항상 고민을 쉬지 않는 웹 퍼블리셔가 되려 노력하고 있습니다
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--after-->
+                    <a href = "images/전세훈_자소서.pdf" download="전세훈_자소서.pdf" class ="about_btn sq_regular">자기소개서 다운로드</a>
+                </div>
+
+                <div id ="about_main_wrap">
+                    <div id ="about_main_ctn">
+                        <p class = "about_main_num mp_black">01.</p>
+                        <p class = "about_main_topic mp_bold">ABOUT ME</p>
+                    </div>
+
+                    <div id ="about_mainBox">
+                        <div class = "swiper-container siwper-about">
+                            <div class ="about_rwd_topicBox">
+                                <p class = "about_rwd_topic sq_regular">
+                                    언제나&nbsp;<strong class = "sq_bold">끈기와&nbsp;인내</strong>를 가지고 도전합니다
+                                </p>
+                                <div class ="about_rwd_rect"></div>
+                            </div>
+                            <a href = "images/전세훈_자소서.pdf" download="전세훈_자소서.pdf" class ="about_rwd_btn sq_regular">자기소개서 다운로드</a>
+
+                            <div class = "swiper-wrapper">
+                                <div class = "swiper-slide">
+                                    <img src = "images/about/about_img1.jpg" alt ="전세훈사진" class = "img aboutImg"/>
+                                    <!--rwd-->
+                                    <div class = "about_rwd_wrap" id = "about_rwd_wrap1">
+                                        <div class ="about_rwd_chg">
+                                            <p class ="about_rwd_sub sq_regular">무언가를 물어보기 전에 스스로 해결방안을 찾는 습관을 지니고 있습니다.</p>
+                                            <p class ="about_rwd_texts sq_light">
+                                                목적에 부합 하면서도 사용성을 충족시키는 웹은 많은 고민과 조사를 통해 이루어진다고 
+                                                믿고 있습니다. 작은 개인 웹사이트부터 큰 쇼핑몰까지 하나하나의 고민과 이러한 노력이 
+                                                모여 이루어집니다. 항상 고민을 쉬지 않는 웹 퍼블리셔가 되려 노력하고 있습니다
+                                            </p>
+                                        </div> 
+                                    </div>
+                                </div>
+
+                                <div class = "swiper-slide">
+                                    <img src = "images/about/about_img2.jpg" alt ="명함이미지" class = "img aboutImg" />
+                                    <!--rwd-->
+                                    <div class = "about_rwd_wrap" id = "about_rwd_wrap2">
+                                        <div class ="about_rwd_chg">
+                                            <div id = "about_rwd_kdBox">
+                                                <div class = "about_rwd_keywords">
+                                                    <!--before 박스-->
+                                                    <p class = "about_rwd_pt sq_regular">기본에 충실</p>
+                                                    <p class = "about_rwd_des sq_light">여러가지 기술 및 능력활용도 중 
+                                                        기본기를 가장 중요하게 생각합니다</p>
+                                                </div>
+                                                <div class = "about_rwd_keywords">
+                                                    <!--before 박스-->
+                                                    <p class = "about_rwd_pt sq_regular">말라드</p>
+                                                    <p class = "about_rwd_des sq_light">차분한 색상의 많은 생각과 고민을 통해
+                                                        문제를 해결하는 저자신과 어울리는 색상입니다</p>
+                                                </div>
+                                                <div class = "about_rwd_keywords">
+                                                    <!--before 박스-->
+                                                    <p class = "about_rwd_pt sq_regular">수렴적 사고</p>
+                                                    <p class = "about_rwd_des sq_light">현재 소속된 집단의 상황에 순응하지만, 
+                                                        새로운 변화또한 적극 수용합니다</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>    
+                                </div>
+
+                                <div class = "swiper-slide">
+                                    <video class = "about_video" autoplay loop muted playsinline>
+                                        <source src = "video/about_video.mp4" />
+                                    </video>
+                                    <!--rwd-->
+                                    <div class = "about_rwd_wrap" id = "about_rwd_wrap3">
+                                        <div class ="about_rwd_chg">
+                                            <p class ="about_rwd_sub sq_regular">무언가를 물어보기 전에 스스로 해결방안을 찾는 습관을 지니고 있습니다.</p>
+                                            <p class ="about_rwd_texts sq_light">
+                                                목적에 부합 하면서도 사용성을 충족시키는 웹은 많은 고민과 조사를 통해 이루어진다고 
+                                                믿고 있습니다. 작은 개인 웹사이트부터 큰 쇼핑몰까지 하나하나의 고민과 이러한 노력이 
+                                                모여 이루어집니다. 항상 고민을 쉬지 않는 웹 퍼블리셔가 되려 노력하고 있습니다
+                                            </p>
+                                        </div>
+                                    </div> 
+                                </div>
+                            </div>
+                            <div class="swiper-button-next about-next"></div>
+                            <div class="swiper-button-prev about-prev"></div>
+                            <div class = "swiper-pagination siwper-about-pition"></div>
+
+                        </div>
+                    </div>
+                    <div id = "about_dragBox">
+                        <!--drag패스-->
+                        <svg version="1.1" id="about_drag" viewBox="0 0 42 43.8" 
+                        style="enable-background:new 0 0 42 43.8;" >
+                        <g>
+                            <path class="about_drag_path" d="M41.7,31c0-2.1-1.8-3.9-3.9-3.9c-0.8,0-1.4,0.2-2,0.5c-0.6-1.3-2-2.2-3.5-2.2c-0.8,0-1.4,0.2-2,0.5
+                                c-0.6-1.3-2-2.2-3.5-2.2c-0.6,0-1.1,0.1-1.6,0.4V16c0-1-0.4-2-1.1-2.8c-0.8-0.8-1.7-1.1-2.7-1.1l0,0c-2.1,0-3.9,1.8-3.9,3.9v18.4
+                                l-2.2-2.3c-1.3-1.3-3.4-1.5-5-0.5c-0.9,0.6-1.6,1.6-1.7,2.7c-0.2,1.1,0.2,2.2,0.9,3.1l4.2,5c0.2,0.3,0.5,0.4,0.9,0.4
+                                c0.3,0,0.5-0.1,0.8-0.3c0.5-0.4,0.5-1.1,0.2-1.6l-4.2-5c-0.3-0.4-0.4-0.8-0.4-1.3c0.1-0.5,0.3-0.9,0.7-1.1c0.6-0.4,1.6-0.4,2.1,0.2
+                                l3.1,3c0.5,0.5,1.3,0.6,1.9,0.4c0.6-0.3,1.1-0.9,1.1-1.7V16c0-0.9,0.8-1.6,1.6-1.6l0,0c0.4,0,0.9,0.2,1.1,0.5
+                                c0.3,0.3,0.5,0.7,0.5,1.1v13.5c0,0.6,0.5,1.1,1.1,1.1c0.6,0,1.1-0.5,1.1-1.1v-1.8c0-0.9,0.8-1.6,1.6-1.6c0.9,0,1.6,0.8,1.6,1.6v3.5
+                                c0,0.6,0.5,1.1,1.1,1.1c0.6,0,1.1-0.5,1.1-1.1v-1.8c0-0.9,0.8-1.6,1.6-1.6s1.6,0.8,1.6,1.6v3.5c0,0.6,0.5,1.1,1.1,1.1
+                                c0.6,0,1.1-0.5,1.1-1.1v-1.7c0-0.1,0-0.1,0-0.1c0-0.9,0.7-1.6,1.6-1.6s1.6,0.7,1.6,1.6v10.9c0,0.6,0.5,1.1,1.1,1.1
+                                c0.6,0,1.1-0.5,1.1-1.1L41.7,31z"/>
+                            <path class="about_drag_path" d="M0.6,6.5L0.6,6.5C0.3,6.8,0.2,7.1,0.3,7.4c0,0.3,0.1,0.6,0.3,0.8L6,13.7c0.4,0.4,1.1,0.4,1.5,0l0.2-0.2
+                                c0.4-0.4,0.4-1.1,0-1.5L4.3,8.6l7.7,0c0.6,0,1.1-0.5,1.1-1.1l0-0.3c0-0.6-0.5-1.1-1.1-1.1l-7.7,0l3.3-3.3c0.4-0.4,0.4-1.1,0-1.5
+                                L7.5,1.1C7.1,0.7,6.4,0.7,6,1.1L0.6,6.5C0.6,6.5,0.6,6.5,0.6,6.5z"/>
+                            <path class="about_drag_path" d="M39.2,8.3L39.2,8.3c0.3-0.3,0.3-0.6,0.3-0.9c0-0.3-0.1-0.6-0.3-0.8l-5.4-5.4c-0.4-0.4-1.1-0.4-1.5,0l-0.2,0.2
+                                c-0.4,0.4-0.4,1.1,0,1.5l3.4,3.4l-7.7,0c-0.6,0-1.1,0.5-1.1,1.1l0,0.3c0,0.6,0.5,1.1,1.1,1.1l7.7,0L32.1,12c-0.4,0.4-0.4,1.1,0,1.5
+                                l0.2,0.2c0.4,0.4,1.1,0.4,1.5,0L39.2,8.3C39.2,8.3,39.2,8.3,39.2,8.3z"/>
+                            <circle class="about_drag_path" cx="20.3" cy="7.3" r="2.7"/>
+                        </g>
+                        </svg>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <div id ="info_wrap" class = "section">
+            <section id ="info" class = "info1">
+                <div class ="titleBox">
+                    <h4 class= "title about_tit mp_black">INFO</h4>
+                </div>
+
+                <div id = "info_main_wrap">
+                    <ul id = "info_main">
+                        <!--info_ctsBox_prev => info_ctsBox_next-->
+                        <li id = "info_ctsBox" class ="info_ctsBox_prev">
+                            <div id = "info_cts" class ="info_cts_prev">
+                                <!--change_prev-->
+                                <div id ="info_ctn_prev">
+                                    <h2 class = "info_theme mp_black">JS</h2>
+                                    <!--스크립트로 jeon 사라지게하기-->
+                                    <p class = "info_note mp_regular">Jeon Se Hoon</p>
+                                    <div class ="info_themeClr"></div>
+                                </div>
+                                
+                                <!--change_next-->
+                                <div id ="info_ctn_next">
+                                    <img src = "images/info/reduce.svg" alt = "창축소아이콘" class = "img reduceImg"/>
+                                    <div id = "info_academic" class ="info_inBox">
+                                        <div class = "info_topicBox">
+                                            <div class = "info_rect_next"></div>
+                                            <h4 class = "info_topic info_ac_topic sq_bold">학력 및 수상</h4>
+                                        </div>
+                                        <div class = "info_line_next"></div>
+                                        <ul class ="ac_cts">
+                                            <li class = "ac_list">
+                                                <p class = "ac_texts sq_regular">부산 고등학교 졸업자격 검정</p>
+                                                <p class = "ac_date">2009</p>
+                                            </li>
+                                            <li class = "ac_list">
+                                                <p class = "ac_texts sq_regular">전남대학교 시각정보디자인학과 졸업</p>
+                                                <p class = "ac_date">2019</p>
+                                            </li>
+                                            <li class = "ac_list">
+                                                <p class = "ac_texts sq_regular">더조은 아카데미 반응형 UX/UI과정 수료</p>
+                                                <p class = "ac_date">2020</p>
+                                            </li>
+                                            <li class = "ac_list">
+                                                <p class = "ac_texts sq_regular">웹디자인 기능사 자격검정</p>
+                                                <p class = "ac_date">2020</p>
+                                            </li>
+    
+                                            <li class = "ac_list ac_list2">
+                                                <p class = "ac_texts sq_regular">여수 천사골목 벽화 디자인</p>
+                                                <p class = "ac_date">2016</p>
+                                            </li>
+                                            <li class = "ac_list">
+                                                <p class = "ac_texts sq_regular">전남대학교 UCC 공모전 수상
+                                                </p>
+                                                <p class = "ac_date">2017</p>
+                                            </li>
+                                            <li class = "ac_list">
+                                                <p class = "ac_texts sq_regular">여수 관광 홍보 공모전 광고디자인 부문수상</p>
+                                                <p class = "ac_date">2017</p>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div id = "info_skill" class ="info_inBox">
+                                        <div class = "info_topicBox">
+                                            <div class = "info_rect_next"></div>
+                                            <h4 class = "info_topic info_skill_topic sq_bold">보유기술</h4>
+                                        </div>
+                                        <div class = "info_line_next"></div>
+                                        <ul class = "skill_menu">
+                                            <li class = "skill_list">
+                                                <img src = "images/info/info_html.svg" alt ="html아이콘" class = "img skillImg"/>
+                                                <p class = "skill_text mp_semiBold">HTML</p>
+                                            </li>
+                                            <li class = "skill_list">
+                                                <img src = "images/info/info_css.svg" alt ="html아이콘" class = "img skillImg"/>
+                                                <p class = "skill_text mp_semiBold">CSS</p>
+                                            </li>
+                                            <li class = "skill_list">
+                                                <img src = "images/info/info_js.svg" alt ="html아이콘" class = "img skillImg"/>
+                                                <p class = "skill_text mp_semiBold">JAVASCRIPT</p>
+                                            </li>
+                                            <li class = "skill_list">
+                                                <img src = "images/info/info_jq.svg" alt ="html아이콘" class = "img skillImg"/>
+                                                <p class = "skill_text mp_semiBold">JQUERY</p>
+                                            </li>
+                                            <li class = "skill_list skill_list2">
+                                                <img src = "images/info/info_ai.svg" alt ="html아이콘" class = "img skillImg"/>
+                                                <p class = "skill_text mp_semiBold">illustrator</p>
+                                            </li>
+                                            <li class = "skill_list skill_list2">
+                                                <img src = "images/info/info_ps.svg" alt ="html아이콘" class = "img skillImg"/>
+                                                <p class = "skill_text mp_semiBold">photoshop</p>
+                                            </li>
+                                            <li class = "skill_list skill_list2">
+                                                <img src = "images/info/info_fp.svg" alt ="html아이콘" class = "img skillImg"/>
+                                                <p class = "skill_text mp_semiBold">finalcut pro</p>
+                                            </li>
+                                            <li class = "skill_list skill_list2">
+                                                <img src = "images/info/info_kn.svg" alt ="html아이콘" class = "img skillImg"/>
+                                                <p class = "skill_text mp_semiBold">keynote</p>
+                                            </li>
+                                            <li id = "skill_ctu">
+                                                <div id = "skill_studing">
+                                                    <div id ="skill_rect"></div>
+                                                    <p class = "skill_date mp_bold">2020 10 31</p>
+                                                    <p class = "skill_stytext sq_regular">기준 공부중</p>
+                                                </div>
+                                                <img src = "images/info/info_react.svg" alt = "리액트 아이콘" class = "img studyImg" />
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+    
+                        <li class ="info_toolBox" id = "info_toolBox1">
+                            <div class = "info_tool">
+                                <h4 class = "info_sub mp_black">Ps</h4>
+                                <ul class = "info_clrBox">
+                                    <li class = "info_clr"></li>
+                                    <li class = "info_clr"></li>
+                                    <li class = "info_clr"></li>
+                                </ul>
+                            </div>
+                        </li>
+    
+                        <li class ="info_toolBox" id = "info_toolBox2">
+                            <div class = "info_tool">
+                                <h4 class = "info_sub mp_black">Ai</h4>
+                                <ul class = "info_clrBox">
+                                    <li class = "info_clr"></li>
+                                    <li class = "info_clr"></li>
+                                    <li class = "info_clr"></li>
+                                </ul>
+                            </div>  
+                        </li>
+    
+                        <li class ="info_toolBox" id = "info_toolBox3">
+                            <div class = "info_tool">
+                                <img src = "images/info/finalCut.svg" alt = "파이널컷프로 아이콘" class = "img toolsIcon" />
+                                <ul class = "info_clrBox">
+                                    <li class = "info_clr"></li>
+                                    <li class = "info_clr"></li>
+                                    <li class = "info_clr"></li>
+                                </ul>
+                            </div>
+                            
+                        </li>
+    
+                        <li class ="info_toolBox" id = "info_toolBox4">
+                            <div class = "info_tool">
+                                <img src = "images/info/keynote.svg" alt = "키노트 아이콘" class = "img toolsIcon" />
+                                <ul class = "info_clrBox">
+                                    <li class = "info_clr"></li>
+                                    <li class = "info_clr"></li>
+                                    <li class = "info_clr"></li>
+                                </ul>
+                            </div>
+                            
+                        </li>
+    
+                        <li class ="info_toolBox" id = "info_toolBox5">
+                            <div class = "info_tool">
+                                <img src = "images/info/html.svg" alt = "HTML 아이콘" class = "img htmlIcon" />
+                                <ul class = "info_clrBox">
+                                    <li class = "info_clr"></li>
+                                    <li class = "info_clr"></li>
+                                    <li class = "info_clr"></li>
+                                </ul>
+                            </div>
+                            
+                        </li>
+    
+                        <li class ="info_toolBox" id = "info_toolBox6">
+                            <div class = "info_tool">
+                                <h4 class = "info_sub mp_black">Css</h4>
+                                <ul class = "info_clrBox">
+                                    <li class = "info_clr"></li>
+                                    <li class = "info_clr"></li>
+                                    <li class = "info_clr"></li>
+                                </ul>
+                            </div> 
+                        </li>
+    
+                        <li class ="info_toolBox" id = "info_toolBox7">
+                            <div class = "info_tool">
+                                <h4 class = "info_sub mp_black">Js</h4>
+                                <ul class = "info_clrBox">
+                                    <li class = "info_clr"></li>
+                                    <li class = "info_clr"></li>
+                                    <li class = "info_clr"></li>
+                                </ul>
+                            </div>
+                            
+                        </li>
+    
+                        <li class ="info_toolBox" id = "info_toolBox8">
+                            <div class = "info_tool">
+                                <h4 class = "info_sub mp_black">Jq</h4>
+                                <ul class = "info_clrBox">
+                                    <li class = "info_clr"></li>
+                                    <li class = "info_clr"></li>
+                                    <li class = "info_clr"></li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <button class = "info_btn">학력 / 기술</button>
+                <p class ="info_copy sq_regular">Copyright © 2020 jeon se hoon</p>
+            </section>
+        </div>
+
+        <div id ="works_wrap" class = "section">
+            <section id = "works">
+                <div class ="titleBox">
+                    <h4 class= "title works_tit mp_black">WORKS</h4>
+                </div>
+
+                <div class = "rectBox mp_black">
+                    <div class = "rect rect_black rect_pos1"></div>
+                    <div class = "rect rect_bold rect_pos2"></div>
+                    <div class = "rect rect_medium rect_pos3"></div>
+                    <div class = "rect rect_semimedium rect_pos4"></div>
+                    <div class = "rect rect_regular rect_pos5"></div>
+                    <div class = "rect rect_light rect_pos6"></div>
+                    <div class = "rect rect_thin rect_pos7"></div>
+                </div>
+
+                <!--position:absolute-->
+                <div id ="works_main_wrap">
+                    <!--position:relative-->
+                    <ul id ="works_main">
+                        <li class = "works_ob works_top">
+                            <img src = "images/works/works_img1.png" alt = "전북교육청 이미지" class = "img worksImg" id ="jbo" />
+                            <p class = "works_ctn mp_black" id = "jbo-git">GitHub</p>
+                        </li>
+                        <li class = "works_ob works_top">
+                            <img src = "images/works/works_img2.png" alt = "담원 게이밍 이미지" class = "img worksImg" id ="dwg" />
+                            <p class = "works_ctn mp_black" id = "dwg-git">GitHub</p>
+                        </li>
+                        <li class = "works_ob">
+                            <img src = "images/works/works_img3.png" alt = "드로우웨이브 이미지" class = "img worksImg" id ="dw" />
+                            <p class = "works_ctn mp_black" id = "dw-git">GitHub</p>
+                        </li>
+                        <li class = "works_ob">
+                            <img src = "images/works/works_img4.png" alt = "인피아드 이미지" class = "img worksImg" id ="inpiad" />
+                            <p class = "works_ctn mp_black" id = "inpiad-git">GitHub</p>
+                        </li>
+                        <li class = "works_ob">
+                            <img src = "images/works/works_img5.png" alt = "올림포스 이미지" class = "img worksImg" id ="ompos" />
+                            <p class = "works_ctn mp_black" id = "ompos-git">GitHub</p>
+                        </li>
+                    </ul>
+                </div>
+
+                <!--<p id = "works_other" class = "mp_black">A LIST OF OTHER WORKS</p>-->
+            </section>
+        </div>
+
+        <div id = "contact_wrap" class = "section">
+            <section id = "contact">
+                <div class ="titleBox">
+                    <h4 class= "title contact_tit mp_black">CONTACT</h4>
+                </div>
+                <ul id = "ctt_menu">
+                    <li class = "ctt_list mp_bold">E-MAIL</li>
+                    <li class = "ctt_list mp_bold">YOUTUBE</li>
+                    <li class = "ctt_list mp_bold">FACEBOOK</li>
+                </ul>
+
+                <div id ="ctt_main">
+                    <p class = "ctt_here mp_medium">Click Here</p>
+                    <div id = "ctt_rect">
+                        <h2 class = "ctt_topic mp_black">SELECT ADDRESS</h2>
+                    </div>
+                    <a href = "images/전세훈_이력서.pdf" download="전세훈_이력서.pdf" class ="ctt_btn sq_regular">이력서 다운로드</a>
+                </div>
+                <p class ="info_copy sq_regular">Copyright © 2020 jeon se hoon</p>
+                <p class = "ctt_phone sq_regular">010.7103.5081</p>
+            </section>
+        </div>  
+    </div>
+    <script src = "js/swiper-bundle.js"></script>
+    <script src = "js/swipCtrl.js"></script>
+    <script src = "js/jquery.easing.1.3.js"></script>
+</body>
+</html>
